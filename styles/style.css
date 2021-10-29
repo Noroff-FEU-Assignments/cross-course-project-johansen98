@@ -1,29 +1,33 @@
-body{margin:0;}
-.desktopNavbar{
-    width:100vw;
-    height:80px;
-    background-image:linear-gradient(180deg,  rgb(34, 93, 255), rgb(4, 0, 255));
-    
-    display:grid;
+body {
+    margin: 0;
+}
+
+.desktopNavbar {
+    width: 100vw;
+    height: 80px;
+    background-image: linear-gradient(180deg, rgb(34, 93, 255), rgb(4, 0, 255));
+
+    display: grid;
     grid-template-areas: 'menuIcon logo   .      .  .   . buttons buttons'
-                         'menuIcon logo search nav  nav nav nav  nav';
+        'menuIcon logo search nav  nav nav nav  nav';
     align-items: center;
 }
 
 .sideMenu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  z-index: 101;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
-.overlay{
+
+.overlay {
     display: none;
     width: 100vw;
     height: 200vh;
@@ -34,84 +38,92 @@ body{margin:0;}
 }
 
 .sideMenu a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  opacity: 100%;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    opacity: 100%;
+    transition: 0.3s;
 }
 
 .sideMenu a:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .sideMenu .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-.search{
+.search {
     grid-area: search;
-    position:relative;
-    padding: 0 20px 0 0 ;
-    background:#ddd;
+    position: relative;
+    padding: 0 20px 0 0;
+    background: #ddd;
     direction: ltr;
     width: 90%;
 }
-.search input{
-    height:20px;
-    margin:0;
-    padding-right:30px;
-    width:100%;
+
+.search input {
+    height: 20px;
+    margin: 0;
+    padding-right: 30px;
+    width: 100%;
 }
-.search img{
+
+.search img {
     position: absolute;
-       bottom: 2px;
+    bottom: 2px;
     right: -8px;
     width: 18px !important;
     height: 24px;
 }
-.desktopNavbar img{
-    width:100px;
+
+.desktopNavbar img {
+    width: 100px;
 }
-.buttons{
+
+.buttons {
     grid-area: buttons;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     gap: 10px;
     margin-right: 25px;
 }
-.buttons a{
+
+.buttons a {
     text-decoration: none;
     color: white;
 }
-.buttons > button{
+
+.buttons>button {
     background-color: rgb(238, 3, 238);
-    border:none;
+    border: none;
     border-radius: 10%;
-    width:fit-content;
-    padding:5px 10px;
+    width: fit-content;
+    padding: 5px 10px;
     color: white;
 }
-.menuIcon{
-    margin:0 auto
+
+.menuIcon {
+    margin: 0 auto
 }
-.menuIcon > div {
+
+.menuIcon>div {
     border-radius: 15%;
-    width:35px;
-    height:5px;
-    background-color:white;
-    margin:6px;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px;
 }
- 
-.links{
+
+.links {
     grid-area: nav;
-    display:flex;
+    display: flex;
     font-size: 20px;
     justify-content: space-around;
     text-align: center;
@@ -120,34 +132,38 @@ body{margin:0;}
     color: white;
 }
 
-.links img{
-    width:20px;
+.links img {
+    width: 20px;
 }
-.links a{
+
+.links a {
     text-decoration: none;
     color: white;
 }
-.mobileNavbar{
-    display:none;
+
+.mobileNavbar {
+    display: none;
 }
-.seperator{
+
+.seperator {
     height: 60%;
     background-color: black;
     width: 1px;
 }
 
-h1{
+h1 {
     text-align: center;
 }
-.mainContainer{
+
+.mainContainer {
     height: 100%;
     width: 80%;
     margin: 0 auto;
 
 }
 
-.newGameContainer{
-    
+.newGameContainer {
+
     display: flex;
     width: 100%;
     height: 300px;
@@ -156,35 +172,38 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.newGameContainer img{
+
+.newGameContainer img {
     max-width: 100%;
     max-height: 100%;
 }
-.headImg img{
+
+.headImg img {
     width: 360px;
     height: 422px;
 }
 
-.rightMedium img{
-width: 340px;
-height: 392px;
-}
-
-.rightSmal img{
-    width: 340px;
-    height: 372px;
-}
-
-.leftMedium img{
+.rightMedium img {
     width: 340px;
     height: 392px;
 }
-.leftSmal img{
+
+.rightSmal img {
     width: 340px;
     height: 372px;
 }
 
-.saleContainer{
+.leftMedium img {
+    width: 340px;
+    height: 392px;
+}
+
+.leftSmal img {
+    width: 340px;
+    height: 372px;
+}
+
+.saleContainer {
     display: flex;
     width: 100%;
     height: 400px;
@@ -193,36 +212,30 @@ height: 392px;
     justify-content: center;
     gap: 2vw;
 }
-.saleContainer img{
+
+.saleContainer img {
     height: 100%;
     width: 100%;
 }
-footer{
-    width:100vw;
-    height:80px;
-    background-image:linear-gradient(180deg,  rgb(34, 93, 255), rgb(4, 0, 255));
+
+footer {
+    width: 100vw;
+    height: 80px;
+    background-image: linear-gradient(180deg, rgb(34, 93, 255), rgb(4, 0, 255));
     text-align: center;
     padding-top: 10px;
-    color:  white;
+    color: white;
     margin-top: 50px;
-    
+
 }
 
 
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:600px){
-    .desktopNavbar{
-        display:none;
+@media only screen and (max-width:600px) {
+    .desktopNavbar {
+        display: none;
     }
-    .mobileNavbar{
+
+    .mobileNavbar {
         display: flex;
         width: 96vw;
         height: 60px;
@@ -232,6 +245,6 @@ footer{
         justify-content: space-between;
         padding: 0 4vw;
     }
-    
+
 
 }
