@@ -55,18 +55,31 @@
         <a href="../index.html">Home</a>
         <a href="/html/games.html">Games</a>
         <a href="/html/checkout.html">Contact Us</a>
+        <div class="side-cta">
+            <button onclick="window.location.href = '/html/login.html'">Login</button>
+            <button onclick="window.location.href = '/html/signup.html'">Sign up</button>
+        </div>
     </div>
 
     <section class="mobileNavbar">
-        <div class="menuIcon">
+        <div class="menuIcon" style="cursor:pointer " onclick="openMobileMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
         <img width="70px;" src="/resources/icons/GameHub_Logo.svg">
         <img src="/resources/icons/SearchIcon.svg">
-
     </section>
+    <div id="myMobileSideMenu" class="MobilesideMenu">
+        <a href="#" class="closebtn" onclick="closeMobileMenu()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="/html/games.html">Games</a>
+        <a href="/html/checkout.html">Contact Us</a>
+        <div class="menu-CTA">
+            <button onclick="window.location.href = '/html/login.html'">Login</button>
+            <button onclick="window.location.href = '/html/signup.html'">Sign up</button>
+        </div>
+    </div>
     <h1> THIS SITE IS COMING SOON</h1>
 </body>
 

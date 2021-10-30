@@ -1,3 +1,16 @@
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(/resources/fonts/Oswald-Bold.ttf);
+}
+@font-face {
+    font-family: Oswald-Medium;
+    src: url(/resources/fonts/Oswald-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-light;
+    src: url(/resources/fonts/Roboto-Light.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -9,10 +22,12 @@ body {
 
     display: grid;
     grid-template-areas: 'menuIcon logo   .      .  .   . buttons buttons'
-        'menuIcon logo search nav  nav nav nav  nav';
+                         'menuIcon logo search nav  nav nav nav  nav';
     align-items: center;
 }
-
+.MobilesideMenu{
+    display: none;
+}
 .sideMenu {
     height: 100%;
     width: 0;
@@ -26,11 +41,28 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
+.side-cta{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    margin-top: 20px
+}
+.side-cta  >  button{
+    text-align: center;
+    background-color: #D03AF2;
+    color: white;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    
+}
 
 .overlay {
     display: none;
     width: 100vw;
-    height: 200vh;
+    height: 121vh;
     background-color: black;
     z-index: 100;
     opacity: 50%;
@@ -38,14 +70,14 @@ body {
 }
 
 .sideMenu a {
-    padding: 8px 8px 8px 32px;
+    padding-bottom: 20px;
     text-decoration: none;
-    
     font-size: 25px;
     color: black;
-    display: block;
+    display: flex;
     opacity: 100%;
     transition: 0.3s;
+    justify-content: center;
 }
 
 .sideMenu a:hover {
@@ -155,6 +187,10 @@ body {
 
 h1 {
     text-align: center;
+    font-family: Oswald-Bold;
+}
+a{
+    font-family: Roboto-light;
 }
 
 .mainContainer {
@@ -164,13 +200,17 @@ h1 {
 
 }
 
+.mobileMainContainer {
+    display: none;
+}
+
 .newGameContainer {
 
     display: flex;
     width: 100%;
     height: 300px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     justify-content: center;
     align-items: center;
 }
@@ -181,28 +221,28 @@ h1 {
 }
 
 .headImg img {
-    width: 360px;
-    height: 422px;
+    width: 260px;
+    height: 322px;
 }
 
 .rightMedium img {
-    width: 340px;
-    height: 392px;
+    width: 240px;
+    height: 292px;
 }
 
 .rightSmal img {
-    width: 340px;
-    height: 372px;
+    width: 230px;
+    height: 272px;
 }
 
 .leftMedium img {
-    width: 340px;
-    height: 392px;
+    width: 240px;
+    height: 292px;
 }
 
 .leftSmal img {
-    width: 340px;
-    height: 372px;
+    width: 230px;
+    height: 272px;
 }
 
 .saleContainer {
@@ -213,6 +253,9 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     gap: 2vw;
+}
+.MobileSaleContainer{
+    display: none;
 }
 
 .saleContainer img {
@@ -233,22 +276,165 @@ footer {
 
 
 @media only screen and (max-width:770px) {
+    body {
+        margin: 0;
+    }
+
     .desktopNavbar {
         display: none;
     }
 
     .mobileNavbar {
         display: flex;
-        width: 90vw;
+        width: 95vw;
         height: 60px;
         background-color: blue;
-        margin-bottom: 100vh;
+        margin-bottom: 5vh;
         align-items: center;
         justify-content: space-between;
         padding: 0 4vw;
     }
-    .menuIcon{
-        margin: 0;
+    .mobileNavbar img{
+        padding-right: 10px;
     }
 
-}
+    .menuIcon {
+        margin: 0;
+        
+    }
+    .MobilesideMenu{
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        z-index: 101;
+        opacity: 100%;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .menu-CTA{
+        text-align: center;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .menu-CTA > button{
+        text-align: center;
+        background-color: #D03AF2;
+        color: white;
+        width: 130px;
+        height: 47px;
+        border: none;
+        border-radius: 4px;
+        
+    }
+    .menu-CTA > button:focus{
+        text-align: center;
+        background-color: #A43DFC;
+        color: white;
+        width: 130px;
+        height: 47px;
+        border: none;
+        border-radius: 4px;
+        
+    }
+    .MobilesideMenu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+    
+        font-size: 25px;
+        color: black;
+        display: flex;
+        opacity: 100%;
+        transition: 0.3s;
+        justify-content: center;
+    }
+    
+    .MobilesideMenu a:hover {
+        color: #979797;
+    }
+    
+    .MobilesideMenu .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+
+
+
+
+    .mainContainer {
+        display: none;
+    }
+    .mobileMainContainer{
+        display: block;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    h3{
+        font-family: Oswald-Medium;
+    }
+    .MobileNewGameContainer {
+
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .MobileNewGameContainer img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .MobileHeadImg img {
+        width: 235px;
+        height: 320px;
+       
+    }
+    
+    .MobileRightMedium img {
+        width: 225px;
+        height: 300px;
+    }
+    
+    .MobileLeftMedium img {
+        width: 225px;
+        height: 300px;
+    }
+    
+    .MobileSaleContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .MobileSaleContainer img{
+        width: 225px;
+        height: 320px;
+        padding: 0px;
+    }
+    
+
+   
+}  

@@ -8,7 +8,15 @@ function openMenu() {
     document.getElementById("overlay").style.display = "none";
   }
 
-
+  function openMobileMenu() {
+    document.getElementById("myMobileSideMenu").style.width = "100%";
+    
+  }
+  
+  function closeMobileMenu() {
+    document.getElementById("myMobileSideMenu").style.width = "0";
+    
+  }
 
 
 

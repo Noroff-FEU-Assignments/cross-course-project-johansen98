@@ -56,18 +56,33 @@
         <a href="../index.html">Home</a>
         <a href="/html/games.html">Games</a>
         <a href="/html/checkout.html">Contact Us</a>
+        <div class="side-cta">
+            <button onclick="window.location.href = '/html/login.html'">Login</button>
+            <button onclick="window.location.href = '/html/signup.html'">Sign up</button>
+        </div>
     </div>
 
     <section class="mobileNavbar">
-        <div class="menuIcon">
+        <div class="menuIcon" style="cursor:pointer " onclick="openMobileMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
         <img width="70px;" src="/resources/icons/GameHub_Logo.svg">
         <img src="/resources/icons/SearchIcon.svg">
-
     </section>
+    <div id="myMobileSideMenu" class="MobilesideMenu">
+        <a href="#" class="closebtn" onclick="closeMobileMenu()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="/html/games.html">Games</a>
+        <a href="/html/checkout.html">Contact Us</a>
+        <div class="menu-CTA">
+            <button onclick="window.location.href = '/html/login.html'">Login</button>
+            <button onclick="window.location.href = '/html/signup.html'">Sign up</button>
+        </div>
+    </div>
+
+ 
     <div class="mainContainer">
         <h1>New Games</h1>
         <div class="newGameContainer">
@@ -104,7 +119,42 @@
             </div>
         </div>
     </div>
+    <section class="mobileMainContainer">
+        <h1>New Games</h1>
+        <div class="MobileNewGameContainer">
 
+            <div class="MobileLeftMedium">
+                <img src="/resources/images/GameHub_covers2.jpeg" alt="Super Duper">
+            </div>
+            <div class="MobileHeadImg">
+                <img src="/resources/images/GameHub_covers6.jpeg" alt="Space War">
+            </div>
+            <div class="MobileRightMedium">
+                <img src="/resources/images/GameHub_covers10.jpeg" alt="Forge Legend">
+            </div>
+
+        </div>
+        <h1>Games on Sale</h1>
+        <div class="MobileSaleContainer">
+            <div>
+                <img src="/resources/images/GameHub_covers5.jpeg" alt="Assassin">
+                <h3>200,- NOK</h3>
+            </div>
+            <div>
+                <img src="/resources/images/GameHub_covers8.jpeg" alt="Boxer">
+                <h3>150,- NOK</h3>
+            </div>
+            <div>
+                <img src="/resources/images/GameHub_covers.jpeg" alt="Ping Pong">
+                <h3>100,- NOK</h3>
+            </div>
+            <div>
+                <img src="/resources/images/GameHub_covers7.jpeg" alt="Racing">
+                <h3>105,- NOK</h3>
+            </div>
+        </div>
+
+    </section>
     <footer>
         <p>Copyright &copy; by Johansen & Co</p>
     </footer>
