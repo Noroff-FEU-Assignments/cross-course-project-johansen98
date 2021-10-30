@@ -2,10 +2,12 @@
     font-family: Oswald-Bold;
     src: url(/resources/fonts/Oswald-Bold.ttf);
 }
+
 @font-face {
     font-family: Oswald-Medium;
     src: url(/resources/fonts/Oswald-Medium.ttf);
 }
+
 @font-face {
     font-family: Roboto-light;
     src: url(/resources/fonts/Roboto-Light.ttf);
@@ -22,12 +24,14 @@ body {
 
     display: grid;
     grid-template-areas: 'menuIcon logo   .      .  .   . buttons buttons'
-                         'menuIcon logo search nav  nav nav nav  nav';
+        'menuIcon logo search nav  nav nav nav  nav';
     align-items: center;
 }
-.MobilesideMenu{
+
+.MobilesideMenu {
     display: none;
 }
+
 .sideMenu {
     height: 100%;
     width: 0;
@@ -41,14 +45,16 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
-.side-cta{
+
+.side-cta {
     display: flex;
     justify-content: center;
     align-content: center;
     gap: 15px;
     margin-top: 20px
 }
-.side-cta  >  button{
+
+.side-cta>button {
     text-align: center;
     background-color: #D03AF2;
     color: white;
@@ -56,7 +62,7 @@ body {
     height: 30px;
     border: none;
     border-radius: 4px;
-    
+
 }
 
 .overlay {
@@ -189,7 +195,8 @@ h1 {
     text-align: center;
     font-family: Oswald-Bold;
 }
-a{
+
+a {
     font-family: Roboto-light;
 }
 
@@ -254,7 +261,8 @@ a{
     justify-content: center;
     gap: 2vw;
 }
-.MobileSaleContainer{
+
+.MobileSaleContainer {
     display: none;
 }
 
@@ -294,15 +302,17 @@ footer {
         justify-content: space-between;
         padding: 0 4vw;
     }
-    .mobileNavbar img{
+
+    .mobileNavbar img {
         padding-right: 10px;
     }
 
     .menuIcon {
         margin: 0;
-        
+
     }
-    .MobilesideMenu{
+
+    .MobilesideMenu {
         display: block;
         height: 100%;
         width: 0;
@@ -317,14 +327,16 @@ footer {
         transition: 0.5s;
         padding-top: 60px;
     }
-    .menu-CTA{
+
+    .menu-CTA {
         text-align: center;
         margin-top: 50px;
         display: flex;
         justify-content: center;
         gap: 10px;
     }
-    .menu-CTA > button{
+
+    .menu-CTA>button {
         text-align: center;
         background-color: #D03AF2;
         color: white;
@@ -332,9 +344,10 @@ footer {
         height: 47px;
         border: none;
         border-radius: 4px;
-        
+
     }
-    .menu-CTA > button:focus{
+
+    .menu-CTA>button:focus {
         text-align: center;
         background-color: #A43DFC;
         color: white;
@@ -342,12 +355,13 @@ footer {
         height: 47px;
         border: none;
         border-radius: 4px;
-        
+
     }
+
     .MobilesideMenu a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-    
+
         font-size: 25px;
         color: black;
         display: flex;
@@ -355,11 +369,11 @@ footer {
         transition: 0.3s;
         justify-content: center;
     }
-    
+
     .MobilesideMenu a:hover {
         color: #979797;
     }
-    
+
     .MobilesideMenu .closebtn {
         position: absolute;
         top: 0;
@@ -367,61 +381,63 @@ footer {
         font-size: 36px;
         margin-left: 50px;
     }
-    
-
-
-
 
     .mainContainer {
         display: none;
     }
-    .mobileMainContainer{
+
+    .mobileMainContainer {
         display: block;
         height: 100%;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
-        
+
     }
-    h1{
+
+    h1 {
         font-size: 40px;
         display: flex;
         justify-content: center;
-        
+
     }
-    h3{
+
+    h3 {
         font-family: Oswald-Medium;
     }
+
     .MobileNewGameContainer {
 
         display: flex;
         width: 100%;
-        height: 100px;
+        height: 300px;
         margin-top: 150px;
         margin-bottom: 150px;
         justify-content: center;
         align-items: center;
     }
+
     .MobileNewGameContainer img {
         max-width: 100%;
         max-height: 100%;
     }
+
     .MobileHeadImg img {
-        width: 235px;
-        height: 320px;
-       
+        width: 255px;
+        height: 300px;
+
     }
-    
+
     .MobileRightMedium img {
-        width: 225px;
-        height: 300px;
+        width: 245px;
+        height: 280px;
     }
-    
+
     .MobileLeftMedium img {
-        width: 225px;
-        height: 300px;
+        width: 245px;
+        height: 280px;
     }
-    
-    .MobileSaleContainer{
+
+    .MobileSaleContainer {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
@@ -429,12 +445,13 @@ footer {
         gap: 20px;
         text-align: center;
     }
-    .MobileSaleContainer img{
+
+    .MobileSaleContainer img {
         width: 225px;
         height: 320px;
         padding: 0px;
     }
-    
 
-   
-}  
+
+
+}
