@@ -15,7 +15,9 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
+
 
 .desktopNavbar {
     width: 100vw;
