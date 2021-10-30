@@ -347,7 +347,7 @@ footer {
         opacity: 100%;
         background-color: rgb(255, 255, 255);
         overflow-x: hidden;
-        transition: 5s;
+        transition: 0.5s;
         padding-top: 60px;
     }
 
