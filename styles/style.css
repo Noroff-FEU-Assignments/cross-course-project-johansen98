@@ -292,6 +292,7 @@ footer {
 @media only screen and (max-width:770px) {
     body {
         margin: 0;
+        overflow-x: hidden;
     }
 
     .desktopNavbar {
