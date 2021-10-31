@@ -27,7 +27,7 @@ body {
     padding: 5px 0;
     display: grid;
     grid-template-areas: 'menuIcon logo   .      .  .   . buttons buttons'
-        'menuIcon logo search nav  nav nav nav  nav';
+                         'menuIcon logo search nav  nav nav nav  nav';
     align-items: center;
 }
 
