@@ -25,6 +25,12 @@ function openMenu() {
     
   }
 
+
+
+
+  
+// ↓↓↓ mobile Search ↓↓↓  
+
   function search(){
     let elm = document.getElementById("searchbar"); 
     if(elm.style.display === 'block')
