@@ -450,13 +450,40 @@ a {
     flex-direction: column;
 }
 .prodImg{
-    background-image: url(/resources/images/GameHub_covers6.jpeg);
     background-repeat: no-repeat ;
-    background-position: center 35%;
+    background-position: center 35%; 
     width: 45vw;
     height: 45vh;
+    
 }
-.smalImg{}
+.smalImg{
+    width:3vw;
+}
+.prodInnerContainer{
+    display:flex;
+    width:45vw;
+    justify-content:space-between;
+    gap:3vw;
+    align-items: center;
+    margin-top: 2vh;
+}
+.prodButtons{
+    display:flex;
+    gap: 1vh;
+    flex-direction: column;
+   
+}
+.prodButtons > button{
+    background-color: #D03AF2;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    height: 5vh;
+    width:8vw;
+}
+#prodPrice{
+    font-weight: bold;
+}
 
 footer {
     width: 100vw;

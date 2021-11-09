@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <script src="/js/script.js"></script>
+    <script src="/js/productCtrl.js"></script>
     <title>Contact Us</title>
 </head>
 
@@ -78,19 +79,29 @@
         <div class="menu-CTA">
             <button onclick="window.location.href = '/html/login.html'" style="cursor: pointer;">Login</button>
             <button onclick="window.location.href = '/html/signup.html'" style="cursor: pointer;">Sign up</button>
-        </div>
+        </div> 
     </div>
     <div class="mainProductConainer">
         <div class="productContainer">
-            <h1>Space War</h1>
-            <div class="prodImg"></div>
-        </div>
-        <div class="smalImgContainer">
-            <img src="/resources/images/GameHub_covers6.jpeg" alt="Space War">
-
-        </div>
+            <h1 id="prodTitle"></h1>
+            <div class="prodImg" id="prodImg"></div>
+                <div class="prodInnerContainer">
+                    <img id="smalImg" class="smalImg">
+                    <div style="display:flex; gap:5vw; gap: 1vw;">
+                        <span id="prodPrice"></span>
+                        <div class="prodButtons">
+                            <button onclick="window.location.href = '/html/signup.html'" style="cursor: pointer;">Add to cart</button>
+                            <button onclick="window.location.href = '/html/signup.html'" style="cursor: pointer;">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="text-align: center; margin-top: 2vh;">About the Game</h2>
+                <p id="gameDescription" style="text-align: center;"></div>
     </div>
-
+</div>
+<footer>
+    <p>Copyright &copy; by Johansen & Co</p>
+</footer>
 </body>
 
 </html>
