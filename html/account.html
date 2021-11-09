@@ -3,15 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="The place where all gamers can feel at home">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <script src="/js/script.js"></script>
-
-    <title>GameHub</title>
+    <title>Account</title>
 </head>
-<!-- ↓↓ Desktop html ↓↓-->
+
 <body>
     <div class="overlay" id="overlay"></div>
     <section class="desktopNavbar">
@@ -20,7 +18,7 @@
             <div></div>
             <div></div>
         </div>
-        <img src="/resources/icons/GameHub_Logo.svg" style="grid-area: logo; margin:0 auto">
+        <img src="/resources/icons/GameHub_Logo.svg" style="grid-area: logo; margin:0 auto; cursor: pointer;" onclick="window.location.href ='../index.html'">
         <div class="search">
             <img src="/resources/icons/SearchIcon_grey.svg">
             <input placeholder="Search" type="text" name="search">
@@ -47,8 +45,8 @@
             <div></div>
         </div>
         <div class="buttons">
-            <button onclick="window.location.href = '/html/login.html'" style="cursor: pointer;">Login</button>
-            <button onclick="window.location.href = '/html/signup.html'" style="cursor: pointer;">Sign up</button>
+            <button> <a href="/html/login.html">Login</a></button>
+            <button><a href="/html/signup.html">Signup</a></button>
         </div>
 
     </section>
@@ -62,7 +60,30 @@
             <button onclick="window.location.href = '/html/signup.html'">Sign up</button>
         </div>
     </div>
-    <h1>Account page is coming soon</h1>
+
+    <section class="mobileNavbar">
+        <div class="menuIcon" style="cursor:pointer " onclick="openMobileMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img width="70px;" src="/resources/icons/GameHub_Logo.svg" onclick="window.location.href ='../index.html'">
+        <img src="/resources/icons/SearchIcon.svg">
+    </section>
+    <div id="myMobileSideMenu" class="MobilesideMenu">
+        <a href="#" class="closebtn" onclick="closeMobileMenu()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="/html/games.html">Games</a>
+        <a href="/html/checkout.html">Contact Us</a>
+        <div class="menu-CTA">
+            <button onclick="window.location.href = '/html/login.html'" style="cursor: pointer;">Login</button>
+            <button onclick="window.location.href = '/html/signup.html'" style="cursor: pointer;">Sign up</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Copyright &copy; by Johansen & Co</p>
+    </footer>
 </body>
 
 </html>
