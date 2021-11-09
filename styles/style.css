@@ -377,6 +377,7 @@ a {
     gap: 1vw;
 }
 .cvc-container > input{
+        height: 3vh;
         width: 4vw;
         text-align: center;
 }
@@ -432,9 +433,30 @@ a {
     background-color: #D03AF2;
     border-radius: 8px;
 }
+/*Product page ↓↓↓*/
 
-
-
+.mainProductConainer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    
+}
+.productContainer{
+    display: flex;
+    width: 60vw;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.prodImg{
+    background-image: url(/resources/images/GameHub_covers6.jpeg);
+    background-repeat: no-repeat ;
+    background-position: center 35%;
+    width: 45vw;
+    height: 45vh;
+}
+.smalImg{}
 
 footer {
     width: 100vw;
@@ -444,7 +466,14 @@ footer {
     padding-top: 10px;
     color: white;
     margin-top: 50px;
+    flex-basis: 100%;
 }
+
+
+
+
+
+
 
 
 @media only screen and (max-width:770px) {
