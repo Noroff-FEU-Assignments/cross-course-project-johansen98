@@ -42,7 +42,7 @@ function openMenu() {
         elm.addEventListener("keyup" , function(event) {
           if(event.keyCode === 13){
             event.preventDefault();
-            window.location.href="index.html"
+            window.location.href="search.html"
           }
         })
       }
