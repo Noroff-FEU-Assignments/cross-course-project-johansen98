@@ -1,101 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <script src="/js/script.js"></script>
     <title>Contact Us</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="overlay" id="overlay"></div>
     <section class="desktopNavbar">
-        <div class="menuIcon" style="grid-area: menuIcon; cursor:pointer " onclick="openMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+      <div
+        class="menuIcon"
+        style="grid-area: menuIcon; cursor: pointer"
+        onclick="openMenu()"
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <img
+        src="/resources/icons/GameHub_Logo.svg"
+        style="grid-area: logo; margin: 0 auto; cursor: pointer"
+        onclick="window.location.href ='../index.html'"
+      />
+      <div class="search">
+        <img src="/resources/icons/SearchIcon_grey.svg" />
+        <input placeholder="Search" type="text" name="search" />
+      </div>
+      <div class="links">
+        <div class="seperator"></div>
+        <div>
+          <a href="../index.html"
+            ><img src="/resources/icons/HomeIcon.svg" alt=""
+          /></a>
+          <div><a href="../index.html">Home</a></div>
         </div>
-        <img src="/resources/icons/GameHub_Logo.svg" style="grid-area: logo; margin:0 auto; cursor: pointer;" onclick="window.location.href ='../index.html'">
-        <div class="search">
-            <img src="/resources/icons/SearchIcon_grey.svg">
-            <input placeholder="Search" type="text" name="search">
+        <div class="seperator"></div>
+        <div>
+          <a href="/html/games.html"
+            ><img
+              href="../html/contact.html"
+              src="/resources/icons/GameIcon.svg"
+              alt=""
+          /></a>
+          <div><a href="/html/games.html">Games</a></div>
         </div>
-        <div class="links">
-            <div class="seperator"></div>
-            <div>
-                <a href="../index.html"><img src="/resources/icons/HomeIcon.svg" alt=""></a>
-                <div><a href="../index.html">Home</a></div>
-            </div>
-            <div class="seperator"></div>
-            <div>
-                <a href="/html/games.html"><img href="../html/contact.html" src="/resources/icons/GameIcon.svg"
-                        alt=""></a>
-                <div> <a href="/html/games.html">Games</a></div>
-            </div>
-            <div class="seperator"></div>
-            <div>
-                <a href="/html/contact.html"><img src="/resources/icons/ContactIcon.svg" alt=""></a>
-                <div> <a href="/html/contact.html">Contact us</a></div>
-            </div>
-            <div class="seperator"></div>
-            <a href="/html/checkout.html"><img src="/resources/icons/ShoppingcartIcon.svg" alt=""></a>
-            <div></div>
+        <div class="seperator"></div>
+        <div>
+          <a href="/html/contact.html"
+            ><img src="/resources/icons/ContactIcon.svg" alt=""
+          /></a>
+          <div><a href="/html/contact.html">Contact us</a></div>
         </div>
-        <div class="buttons">
-            <button> <a href="/html/login.html">Login</a></button>
-            <button><a href="/html/signup.html">Signup</a></button>
-        </div>
-
+        <div class="seperator"></div>
+        <a href="/html/checkout.html"
+          ><img src="/resources/icons/ShoppingcartIcon.svg" alt=""
+        /></a>
+        <div></div>
+      </div>
+      <div class="buttons">
+        <button><a href="/html/login.html">Login</a></button>
+        <button><a href="/html/signup.html">Signup</a></button>
+      </div>
     </section>
     <div id="mySideMenu" class="sideMenu">
-        <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
-        <a href="../index.html">Home</a>
-        <a href="/html/games.html">Games</a>
-        <a href="/html/contact.html">Contact Us</a>
-        <div class="side-cta">
-            <button onclick="window.location.href = '/html/login.html'">Login</button>
-            <button onclick="window.location.href = '/html/signup.html'">Sign up</button>
-        </div>
+      <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="/html/games.html">Games</a>
+      <a href="/html/contact.html">Contact Us</a>
+      <div class="side-cta">
+        <button onclick="window.location.href = '/html/login.html'">
+          Login
+        </button>
+        <button onclick="window.location.href = '/html/signup.html'">
+          Sign up
+        </button>
+      </div>
     </div>
-
     <section class="mobileNavbar">
-        <div class="menuIcon" style="cursor:pointer " onclick="openMobileMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <img width="70px;" src="/resources/icons/GameHub_Logo.svg" onclick="window.location.href ='../index.html'">
-        <img src="/resources/icons/SearchIcon.svg" onclick="search()">
+      <div class="menuIcon" style="cursor: pointer" onclick="openMobileMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <img
+        width="70px;"
+        src="/resources/icons/GameHub_Logo.svg"
+        onclick="window.location.href ='../index.html'"
+      />
+      <img src="/resources/icons/SearchIcon.svg" onclick="search()" />
     </section>
-    <input class="searchbar" placeholder="Search" type="text" name="search" id="searchbar">
+    <input
+      class="searchbar"
+      placeholder="Search"
+      type="text"
+      name="search"
+      id="searchbar"
+    />
     <div id="myMobileSideMenu" class="MobilesideMenu">
-        <a href="#" class="closebtn" onclick="closeMobileMenu()">&times;</a>
-        <a href="../index.html">Home</a>
-        <a href="/html/games.html">Games</a>
-        <a href="/html/contact.html">Contact Us</a>
-        <div class="menu-CTA">
-            <button onclick="window.location.href = '/html/login.html'" style="cursor: pointer;">Login</button>
-            <button onclick="window.location.href = '/html/signup.html'" style="cursor: pointer;">Sign up</button>
-        </div>
+      <a href="#" class="closebtn" onclick="closeMobileMenu()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="/html/games.html">Games</a>
+      <a href="/html/contact.html">Contact Us</a>
+      <div class="menu-CTA">
+        <button
+          onclick="window.location.href = '/html/login.html'"
+          style="cursor: pointer"
+        >
+          Login
+        </button>
+        <button
+          onclick="window.location.href = '/html/signup.html'"
+          style="cursor: pointer"
+        >
+          Sign up
+        </button>
+      </div>
     </div>
     <div class="mainContactContainer">
-    <div class="contactContainer">
+      <div class="contactContainer">
         <div class="contactInfo">
-            <h1>Contact Us  Here!</h1>
-            <input type="text" class="name" placeholder="Your Name">
-            <input type="text" name="epost" placeholder="Your E-mail">
-            <h3>What can we help you with?</h3>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message Here" style="resize: none;"></textarea>
-            <button onclick="window.location.href = '/html/contact.html'" style="cursor: pointer;">Submit</button>
+          <h1>Contact Us Here!</h1>
+          <input type="text" class="name" placeholder="Your Name" />
+          <input type="text" name="epost" placeholder="Your E-mail" />
+          <h3>What can we help you with?</h3>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message Here"
+            style="resize: none"
+          ></textarea>
+          <button
+            onclick="if(!alert('Thanks For Contacting Us!')){window.location.reload();}"
+            style="cursor: pointer"
+          >
+            Submit
+          </button>
         </div>
+      </div>
     </div>
-</div>
-<footer style="margin: 0 auto;">
-    <p>Copyright &copy; by Johansen & Co</p>
-</footer>
-</body>
-
+    <footer style="margin: 0 auto">
+      <p>Copyright &copy; by Johansen & Co</p>
+    </footer>
+  </body>
 </html>
