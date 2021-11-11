@@ -445,11 +445,17 @@ a {
   justify-content: flex-start;
   flex-direction: column;
 }
+.productContainer > p{
+  font-family: Roboto-Bold;
+}
 .prodImg {
   background-repeat: no-repeat;
   background-position: center 35%;
   width: 45vw;
   height: 45vh;
+}
+.productContainer > h2{
+  font-family: Roboto-Bold;
 }
 .smalImg {
   width: 3vw;
@@ -701,6 +707,10 @@ footer {
   margin-top: 50px;
   flex-basis: 100%;
 }
+
+
+
+
 
 @media only screen and (max-width: 770px) {
   body {
