@@ -12,6 +12,10 @@
   font-family: Roboto-light;
   src: url(/resources/fonts/Roboto-Light.ttf);
 }
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(/resources/fonts/Roboto-Bold.ttf);
+}
 
 body {
   margin: 0;
@@ -199,7 +203,12 @@ h1 {
   text-align: center;
   font-family: Oswald-Bold;
 }
-
+h2{
+  font-family: Oswald-Bold;
+}
+h3{
+  font-family: Roboto-light
+}
 a {
   font-family: Roboto-light;
 }
@@ -312,6 +321,7 @@ a {
 }
 
 .loginContainer > input {
+  font-family: Roboto-Bold;
   width: 15vw;
   height: 3vh;
 }
@@ -320,6 +330,7 @@ a {
   gap: 0.5vw;
 }
 .loginPageButtons > button {
+  font-family: Roboto-Bold;
   width: 10vw;
   height: 5vh;
   border-radius: 8px;
@@ -352,12 +363,14 @@ a {
 .signupContainer > input {
   width: 15vw;
   height: 3vh;
+  font-family: Roboto-Bold;
 }
 .cvc-container {
   display: flex;
   gap: 1vw;
 }
 .cvc-container > input {
+  font-family: Roboto-Bold;
   height: 3vh;
   width: 4vw;
   text-align: center;
@@ -367,6 +380,7 @@ a {
   gap: 0.5vw;
 }
 .signupPageButtons > button {
+  font-family: Roboto-Bold;
   width: 10vw;
   height: 5vh;
   border-radius: 8px;
@@ -396,16 +410,19 @@ a {
   gap: 2vh;
 }
 .contactInfo > input {
+  font-family: Roboto-Bold;
   width: 15vw;
   height: 3vh;
 }
 .contactInfo > textarea {
+  font-family: Roboto-Bold;
   width: 15vw;
 }
 .contactInfo > h3 {
   margin: 0 auto;
 }
 .contactInfo > button {
+  font-family: Roboto-Bold;
   width: 10vw;
   height: 5vh;
   border: none;
@@ -445,12 +462,14 @@ a {
   align-items: center;
   margin-top: 2vh;
 }
+
 .prodButtons {
   display: flex;
   gap: 1vh;
   flex-direction: column;
 }
 .prodButtons > button {
+  font-family: Roboto-Bold;
   background-color: #d03af2;
   color: white;
   border-radius: 8px;
@@ -462,108 +481,121 @@ a {
   font-weight: bold;
 }
 /*Account page ↓↓↓*/
-.mainProfileContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8vh;
-    width: 100vw;
-    height: 150vh;
+.mainProfileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8vh;
+  width: 100vw;
+  height: 150vh;
 }
-.profileHeader{
-    display: flex;
-    border-radius: 4px;
-    box-shadow: 8px 8px 5px grey;
-    width: 40vw;
-    height: 45vh;
-    gap: 2vw;
-    background-color: #D5D5D5;
-    justify-content: center;
+.profileHeader {
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 8px 8px 5px grey;
+  width: 40vw;
+  height: 45vh;
+  gap: 2vw;
+  background-color: #d5d5d5;
+  justify-content: center;
 }
-.userImg{
+.userImg {
   margin-top: 4vh;
 }
-.userImg > img{
-    border-radius: 50%;
-    width: 280px;
-    height: 280px;
+.userImg > img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
 }
-.userBio{
-    margin-top: 12vh;
-    text-align: center;
-}
-.userInfo{
-    margin-top: 4vh;
-}
-.sellGameContainer{
-    margin-top: 2vh;
-    text-align: center;
-    width: 40vw;
-    height: 80vh;
-}
-.sellGameContainer > h2{
-    margin-bottom: 5vh;
-}
-.sellGameInfo{
-    text-align: center;
-    display: grid;
-    gap: 3vh;
-    justify-items: center;
-}
-.sellGameInfo .sellGameTitle{
-    width: 15vw;
-    height: 5vh;
-    text-align: center;
-}
-.sellGameInfo  .price{
-    width: 5vw;
-    height: 5vh;
-    text-align: center;
-}
-.gameDescription > textarea{
-    
-    width: 20vw;
-    resize: none;
-}
-.sellGameInfo .upload{
-    margin-left: 7vw;
-}
-.sellGameInfo > button{
-    width: 8vw;
-    height: 5vh;
-    border-radius: 8px;
-    border: none;
-    background-color: #d03af2;
-    color: white;
-}
-.userPaymentHistory > table, th, td{
-        border: 1px solid black;
-      
-}
-.userPaymentHistory > table, th{
-    height: 3vh; 
-    width: 8vw;
-}
-
-.UserHistory{
-  display: flex;
-  justify-content: center;
-    margin-top: 5vh;
-    height: 80vh;
-    width: 50vw;
-
-}
-/*Search page↓↓↓*/
-.searchInfo{
+.userBio {
+  
+  margin-top: 12vh;
   text-align: center;
 }
-.mainSearch{
+.userInfo {
+  font-family: Roboto-Bold;
+  margin-top: 4vh;
+}
+.sellGameContainer {
+  margin-top: 2vh;
+  text-align: center;
+  width: 40vw;
+  height: 80vh;
+}
+.sellGameContainer > h2 {
+  margin-bottom: 5vh;
+}
+.sellGameInfo {
+  text-align: center;
+  display: grid;
+  gap: 3vh;
+  justify-items: center;
+}
+.sellGameInfo .sellGameTitle {
+  font-family: Roboto-Bold;
+  width: 15vw;
+  height: 5vh;
+  text-align: center;
+}
+.sellGameInfo .price {
+  font-family: Roboto-Bold;
+  width: 5vw;
+  height: 5vh;
+  text-align: center;
+}
+.gameDescription > textarea {
+  font-family: Roboto-Bold;
+  width: 20vw;
+  resize: none;
+}
+.gameDescription p{
+  font-family: Roboto-Bold;
+}
+.sellGameInfo .upload {
+  margin-left: 7vw;
+}
+.sellGameInfo > button {
+  font-family: Roboto-Bold;
+  width: 8vw;
+  height: 5vh;
+  border-radius: 8px;
+  border: none;
+  background-color: #d03af2;
+  color: white;
+}
+.userPaymentHistory > table,
+th,
+td {
+  font-family: Roboto-Bold;
+  border: 1px solid black;
+}
+.userPaymentHistory > table,
+th {
+  height: 3vh;
+  width: 8vw;
+}
+.userPaymentHistory > caption{
+  font-family: Roboto-Bold;
+}
+
+.UserHistory {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  height: 80vh;
+  width: 50vw;
+}
+/*Search page↓↓↓*/
+.searchInfo {
+  text-align: center;
+}
+.mainSearch {
   width: 100vw;
   height: 220vh;
   display: flex;
   justify-content: center;
 }
-.searchPage{
+.searchPage {
   width: 50vw;
   height: 170vh;
   display: flex;
@@ -571,63 +603,65 @@ a {
   align-items: center;
   gap: 12vh;
 }
-.searchResult1{
+.searchResult1 {
   display: flex;
   gap: 1vw;
 }
-.searchResult1 > img{
+.searchResult1 > img {
   width: 350px;
 }
-.searchResult1Bt{
+.searchResult1Bt {
   display: flex;
-flex-direction: column;
-gap: 1vh;
-justify-content: flex-end;
+  flex-direction: column;
+  gap: 1vh;
+  justify-content: flex-end;
 }
-.searchResult1Bt > button{
- background-color: #d03af2;
- color: white;
- border: none;
- border-radius: 4px;
- width: 5vw;
- height: 3vh;
+.searchResult1Bt > button {
+  font-family: Roboto-Bold;
+  background-color: #d03af2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 5vw;
+  height: 3vh;
 }
-.searchResult2{
+.searchResult2 {
   display: flex;
   gap: 1vw;
 }
-.searchResult2 > img{
+.searchResult2 > img {
   width: 350px;
 }
-.searchResult3{
+.searchResult3 {
   display: flex;
   gap: 1vw;
 }
-.searchResult3 > img{
+.searchResult3 > img {
   width: 350px;
 }
 /*Checkout pgae ↓↓↓*/
-.mainCheckoutConatiner{
+.mainCheckoutConatiner {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.checkoutContainer{
-  background-color: #D8D8D8;
+.checkoutContainer {
+  background-color: #d8d8d8;
   width: 40vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
 }
-.creditInfo{
+.creditInfo {
   gap: 1vw;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.creditInfo > button{
+.creditInfo > button {
+  font-family: Roboto-Bold;
   background-color: #d03af2;
   color: white;
   border-radius: 4px;
@@ -635,27 +669,29 @@ justify-content: flex-end;
   height: 4vh;
   width: 8vw;
 }
-.cardHolder{
+.cardHolder {
+  font-family: Roboto-Bold;
   width: 12vw;
   height: 3vh;
 }
-.cardNumber{
+.cardNumber {
+  font-family: Roboto-Bold;
   width: 12vw;
   height: 3vh;
 }
-.creditCVC{
+.creditCVC {
   width: 13vw;
   display: flex;
   justify-content: space-around;
 }
-.creditCVC > input{
+.creditCVC > input {
+  font-family: Roboto-Bold;
   height: 3vh;
   width: 5.5vw;
 }
 
-
-
 footer {
+  font-family: Roboto-Bold;
   width: 100vw;
   height: 80px;
   background-image: linear-gradient(180deg, rgb(34, 93, 255), rgb(4, 0, 255));
@@ -665,8 +701,6 @@ footer {
   margin-top: 50px;
   flex-basis: 100%;
 }
-
-
 
 @media only screen and (max-width: 770px) {
   body {
@@ -944,17 +978,16 @@ footer {
     width: 15vw;
   }
 
-/*Account page ↓↓↓*/
-.mainProfileContainer{
-    
+  /*Account page ↓↓↓*/
+  .mainProfileContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2vh;
     width: 100%;
-    height: 260vh;  
-}
-.profileHeader{
+    height: 260vh;
+  }
+  .profileHeader {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -964,140 +997,137 @@ footer {
     width: 85vw;
     height: 50vh;
     gap: 0;
-    background-color: #D5D5D5;
-    
-}
+    background-color: #d5d5d5;
+  }
 
-.userImg > img{
+  .userImg > img {
     border-radius: 50%;
     width: 110px;
     height: 110px;
-}
-.userBio{
+  }
+  .userBio {
     margin-top: 0;
     text-align: center;
-}
-.userInfo{
+  }
+  .userInfo {
     margin-top: 0;
     text-align: center;
-}
+  }
 
-.sellGameContainer{
+  .sellGameContainer {
     margin-top: 2vh;
     text-align: center;
     width: 85vw;
     height: 80vh;
-}
-.sellGameContainer > h2{
+  }
+  .sellGameContainer > h2 {
     margin-bottom: 5vh;
-}
-.sellGameInfo{
+  }
+  .sellGameInfo {
     text-align: center;
     display: grid;
     gap: 2vh;
     justify-items: center;
-}
-.sellGameInfo .sellGameTitle{
+  }
+  .sellGameInfo .sellGameTitle {
     width: 55vw;
     height: 5vh;
     text-align: center;
-}
-.sellGameInfo  .price{
+  }
+  .sellGameInfo .price {
     width: 30vw;
     height: 5vh;
     text-align: center;
-}
-.gameDescription > textarea{
-    
+  }
+  .gameDescription > textarea {
     width: 65vw;
     resize: none;
-}
-.sellGameInfo .upload{
+  }
+  .sellGameInfo .upload {
     margin-left: 10vw;
     display: none;
-}
+  }
 
-.sellGameInfo > button{
+  .sellGameInfo > button {
     width: 25vw;
     height: 5vh;
-}
-.userPaymentHistory > table, th, td{
-        border: 1px solid black;
-    
-}
-.UserHistory{
+  }
+  .userPaymentHistory > table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  .UserHistory {
     width: 85vw;
-    
-    
-}
-.userPaymentHistory > table, th{
-    height: 3vh; 
+  }
+  .userPaymentHistory > table,
+  th {
+    height: 3vh;
     width: 250vw;
-}
-/*Search page↓↓↓*/
-.mainSearch{
-  width: 100vw;
-  height: 170vh;
-}
-.searchPage{
-  width: 95vw;
-  height: 170vh;
-  gap: 12vh;
-}
-.searchResult1{
-  gap: 2vw;
-}
-.searchResult1 > img{
-  width: 200px;
-}
+  }
+  /*Search page↓↓↓*/
+  .mainSearch {
+    width: 100vw;
+    height: 170vh;
+  }
+  .searchPage {
+    width: 95vw;
+    height: 170vh;
+    gap: 12vh;
+  }
+  .searchResult1 {
+    gap: 2vw;
+  }
+  .searchResult1 > img {
+    width: 200px;
+  }
 
-.searchResult1Bt > button{
- width: 20vw;
- height: 5vh;
-}
-.searchResult2{
-  gap: 2vw;
-}
-.searchResult2 > img{
-  width: 200px;
-}
-.searchResult3{
-  gap: 2vw;
-}
-.searchResult3 > img{
-  width: 200px;
-}
-/*Checkout pgae ↓↓↓*/
-.mainCheckoutConatiner{
-  height: 100vh;
-}
-.checkoutContainer{
-  width: 95vw;
-  height: 60vh; 
-}
-.sumOfItems{
-  margin-bottom: 2vh;
-}
-.creditInfo > button{
-  height: 4vh;
-  width: 22vw;
-}
-.cardHolder{
-  width: 45vw;
-  height: 3vh;
-}
-.cardNumber{
-  width: 45vw;
-  height: 3vh;
-}
-.creditCVC{
-  width: 45vw;
-  gap: 1vw;
-  margin-bottom: 2vh;
-}
-.creditCVC > input{
-  height: 3vh;
-  width: 21vw;
-}
-
+  .searchResult1Bt > button {
+    width: 20vw;
+    height: 5vh;
+  }
+  .searchResult2 {
+    gap: 2vw;
+  }
+  .searchResult2 > img {
+    width: 200px;
+  }
+  .searchResult3 {
+    gap: 2vw;
+  }
+  .searchResult3 > img {
+    width: 200px;
+  }
+  /*Checkout pgae ↓↓↓*/
+  .mainCheckoutConatiner {
+    height: 100vh;
+  }
+  .checkoutContainer {
+    width: 95vw;
+    height: 60vh;
+  }
+  .sumOfItems {
+    margin-bottom: 2vh;
+  }
+  .creditInfo > button {
+    height: 4vh;
+    width: 22vw;
+  }
+  .cardHolder {
+    width: 45vw;
+    height: 3vh;
+  }
+  .cardNumber {
+    width: 45vw;
+    height: 3vh;
+  }
+  .creditCVC {
+    width: 45vw;
+    gap: 1vw;
+    margin-bottom: 2vh;
+  }
+  .creditCVC > input {
+    height: 3vh;
+    width: 21vw;
+  }
 }
