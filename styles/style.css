@@ -487,14 +487,14 @@ a {
   align-items: center;
   margin-top: 8vh;
   width: 100vw;
-  height: 150vh;
+  height: 170vh;
 }
 .profileHeader {
   display: flex;
   border-radius: 4px;
   box-shadow: 8px 8px 5px grey;
-  width: 40vw;
-  height: 45vh;
+  width: 65vw;
+  height: 65vh;
   gap: 2vw;
   background-color: #d5d5d5;
   justify-content: center;
@@ -582,7 +582,7 @@ th {
   display: flex;
   justify-content: center;
   margin-top: 5vh;
-  height: 80vh;
+  height: 100vh;
   width: 50vw;
 }
 /*Search page↓↓↓*/
