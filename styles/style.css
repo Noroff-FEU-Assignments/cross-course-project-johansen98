@@ -544,27 +544,10 @@ a {
     height: 3vh; 
     width: 8vw;
 }
-/*Search page↓↓↓*/
-.mainSearch{
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-}
 
-
-footer {
-  width: 100vw;
-  height: 80px;
-  background-image: linear-gradient(180deg, rgb(34, 93, 255), rgb(4, 0, 255));
-  text-align: center;
-  padding-top: 10px;
-  color: white;
-  margin-top: 50px;
-  flex-basis: 100%;
-}
 .UserHistory{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
     margin-top: 5vh;
     height: 80vh;
     width: 50vw;
@@ -596,7 +579,7 @@ footer {
   width: 350px;
 }
 .searchResult1Bt{
-display: flex;
+  display: flex;
 flex-direction: column;
 gap: 1vh;
 justify-content: flex-end;
@@ -623,10 +606,65 @@ justify-content: flex-end;
 .searchResult3 > img{
   width: 350px;
 }
+/*Checkout pgae ↓↓↓*/
+.mainCheckoutConatiner{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.checkoutContainer{
+  background-color: #D8D8D8;
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.creditInfo{
+  gap: 1vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.creditInfo > button{
+  background-color: #d03af2;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  height: 4vh;
+  width: 8vw;
+}
+.cardHolder{
+  width: 12vw;
+  height: 3vh;
+}
+.cardNumber{
+  width: 12vw;
+  height: 3vh;
+}
+.creditCVC{
+  width: 13vw;
+  display: flex;
+  justify-content: space-around;
+}
+.creditCVC > input{
+  height: 3vh;
+  width: 5.5vw;
+}
 
 
 
-
+footer {
+  width: 100vw;
+  height: 80px;
+  background-image: linear-gradient(180deg, rgb(34, 93, 255), rgb(4, 0, 255));
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  margin-top: 50px;
+  flex-basis: 100%;
+}
 
 
 
@@ -912,19 +950,19 @@ justify-content: flex-end;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8vh;
+    margin-top: 2vh;
     width: 100%;
-    height: 260vh;
-    margin-left: 3vw;
+    height: 260vh;  
 }
 .profileHeader{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 4px;
     box-shadow: 8px 8px 5px grey;
     width: 85vw;
-    height: 80vh;
+    height: 50vh;
     gap: 0;
     background-color: #D5D5D5;
     
@@ -982,10 +1020,6 @@ justify-content: flex-end;
 .sellGameInfo > button{
     width: 25vw;
     height: 5vh;
-    border-radius: 8px;
-    border: none;
-    background-color: #d03af2;
-    color: white;
 }
 .userPaymentHistory > table, th, td{
         border: 1px solid black;
@@ -1033,6 +1067,37 @@ justify-content: flex-end;
 .searchResult3 > img{
   width: 200px;
 }
-
+/*Checkout pgae ↓↓↓*/
+.mainCheckoutConatiner{
+  height: 100vh;
+}
+.checkoutContainer{
+  width: 95vw;
+  height: 60vh; 
+}
+.sumOfItems{
+  margin-bottom: 2vh;
+}
+.creditInfo > button{
+  height: 4vh;
+  width: 22vw;
+}
+.cardHolder{
+  width: 45vw;
+  height: 3vh;
+}
+.cardNumber{
+  width: 45vw;
+  height: 3vh;
+}
+.creditCVC{
+  width: 45vw;
+  gap: 1vw;
+  margin-bottom: 2vh;
+}
+.creditCVC > input{
+  height: 3vh;
+  width: 21vw;
+}
 
 }
