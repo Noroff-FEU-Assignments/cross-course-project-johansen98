@@ -1003,11 +1003,11 @@ justify-content: flex-end;
 /*Search page↓↓↓*/
 .mainSearch{
   width: 100vw;
-  height: 150vh;
+  height: 170vh;
 }
 .searchPage{
   width: 95vw;
-  height: 150vh;
+  height: 170vh;
   gap: 12vh;
 }
 .searchResult1{
