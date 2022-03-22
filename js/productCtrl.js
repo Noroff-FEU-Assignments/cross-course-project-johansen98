@@ -98,15 +98,16 @@ const products = [
       "build you own car and test its limits in some of the fastest " +
       "racing tracks in the world.",
     imgUrl: "/resources/images/GameHub_covers7.jpeg",
-  },
+  }
 ];
-
+//Global variable
+let product;
 window.addEventListener("load", function () {
   const urlQuery = window.location.search;
   const urlParams = new URLSearchParams(urlQuery);
   const productId = urlParams.get("productId");
 
-  const product = products.find((p) => p.productId == productId);
+  product = products.find((p) => p.productId == productId);
   document.getElementById("prodImg").style.backgroundImage = "url(" + product.imgUrl + ")";
   document.getElementById("prodPrice").innerHTML = "NOK " + product.price + ",-";
   document.getElementById("prodTitle").innerHTML = product.title;
@@ -114,3 +115,35 @@ window.addEventListener("load", function () {
   document.getElementById("smalImg").src = product.imgUrl = product.imgUrl;
   document.getElementById("smalImg").alt = product.imgUrl = product.title;
 });
+
+function addToCart(){
+  let shoppingCart = JSON.parse(localStorage.getItem("cart"))
+  //Check if shoppingCart allready exists
+  if(shoppingCart){
+    //Check if shoppingCart allready contains the product
+    for(let i = 0; i < shoppingCart.length; i++){
+      const cartItem = shoppingCart[i];
+      //If exists, update the amount instead of pushing new object. then return.
+      if(cartItem.productId === product.productId){
+        cartItem.amount++;
+        localStorage.setItem("cart", JSON.stringify(shoppingCart));
+        return;
+      }
+    }
+    //If the compiler reach here, it means the product does not exists, push new shoppingCart object
+    shoppingCart.push({
+      productId: product.productId,
+      amount: 1
+    });
+    localStorage.setItem("cart", JSON.stringify(shoppingCart));
+  
+  } else { // shoppingCart does not exists
+    shoppingCart = [
+      {
+        productId: product.productId,
+        amount: 1
+      }
+    ];
+    localStorage.setItem("cart", JSON.stringify(shoppingCart));
+  }
+}
