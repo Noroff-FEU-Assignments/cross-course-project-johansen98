@@ -6,6 +6,21 @@
     <meta name="description" content="You GameHub account" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2887954, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
     <script src="/js/script.js"></script>
     <title>My account</title>
   </head>
@@ -13,7 +28,11 @@
   <body>
     <div class="overlay" id="overlay"></div>
     <section class="desktopNavbar">
-      <div class="menuIcon" style="grid-area: menuIcon; cursor: pointer" onclick="openMenu()">
+      <div
+        class="menuIcon"
+        style="grid-area: menuIcon; cursor: pointer"
+        onclick="openMenu()"
+      >
         <div></div>
         <div></div>
         <div></div>
@@ -24,27 +43,41 @@
         onclick="window.location.href ='../index.html'"
       />
       <div class="search">
-        <img src="/resources/icons/SearchIcon_grey.svg" onclick="window.location.href='/html/search.html'" />
+        <img
+          src="/resources/icons/SearchIcon_grey.svg"
+          onclick="window.location.href='/html/search.html'"
+        />
         <input placeholder="Search" type="text" name="search" />
       </div>
       <div class="links">
         <div class="seperator"></div>
         <div>
-          <a href="../index.html"><img src="/resources/icons/HomeIcon.svg" alt="" /></a>
+          <a href="../index.html"
+            ><img src="/resources/icons/HomeIcon.svg" alt=""
+          /></a>
           <div><a href="../index.html">Home</a></div>
         </div>
         <div class="seperator"></div>
         <div>
-          <a href="/html/games.html"><img href="../html/contact.html" src="/resources/icons/GameIcon.svg" alt="" /></a>
+          <a href="/html/games.html"
+            ><img
+              href="../html/contact.html"
+              src="/resources/icons/GameIcon.svg"
+              alt=""
+          /></a>
           <div><a href="/html/games.html">Games</a></div>
         </div>
         <div class="seperator"></div>
         <div>
-          <a href="/html/contact.html"><img src="/resources/icons/ContactIcon.svg" alt="" /></a>
+          <a href="/html/contact.html"
+            ><img src="/resources/icons/ContactIcon.svg" alt=""
+          /></a>
           <div><a href="/html/contact.html">Contact us</a></div>
         </div>
         <div class="seperator"></div>
-        <a href="/html/checkout.html"><img src="/resources/icons/ShoppingcartIcon.svg" alt="" /></a>
+        <a href="/html/checkout.html"
+          ><img src="/resources/icons/ShoppingcartIcon.svg" alt=""
+        /></a>
         <div></div>
       </div>
       <div class="buttons">
@@ -57,8 +90,12 @@
       <a href="/html/games.html">Games</a>
       <a href="/html/checkout.html">Contact Us</a>
       <div class="side-cta">
-        <button onclick="window.location.href = '/html/login.html'">Login</button>
-        <button onclick="window.location.href = '/html/signup.html'">Sign up</button>
+        <button onclick="window.location.href = '/html/login.html'">
+          Login
+        </button>
+        <button onclick="window.location.href = '/html/signup.html'">
+          Sign up
+        </button>
       </div>
     </div>
 
@@ -68,11 +105,21 @@
         <div></div>
         <div></div>
       </div>
-      <img width="70px;" src="/resources/icons/GameHub_Logo.svg" onclick="window.location.href ='../index.html'" />
+      <img
+        width="70px;"
+        src="/resources/icons/GameHub_Logo.svg"
+        onclick="window.location.href ='../index.html'"
+      />
       <img src="/resources/icons/SearchIcon.svg" onclick="search()" />
     </section>
 
-    <input class="searchbar" placeholder="Search" type="text" name="search" id="searchbar" />
+    <input
+      class="searchbar"
+      placeholder="Search"
+      type="text"
+      name="search"
+      id="searchbar"
+    />
     <div id="myMobileSideMenu" class="MobilesideMenu">
       <a href="#" class="closebtn" onclick="closeMobileMenu()">&times;</a>
       <a href="../index.html">Home</a>
@@ -80,7 +127,12 @@
       <a href="/html/checkout.html">Contact Us</a>
       <a href="/html/checkout.html">Shopping Cart</a>
       <div class="menu-CTA">
-        <button onclick="window.location.href = '/html/login.html'" style="cursor: pointer">LogOut</button>
+        <button
+          onclick="window.location.href = '/html/login.html'"
+          style="cursor: pointer"
+        >
+          LogOut
+        </button>
       </div>
     </div>
     <div class="mainProfileContainer">
@@ -104,14 +156,30 @@
       <div class="sellGameContainer">
         <h2>Sell A Game</h2>
         <div class="sellGameInfo">
-          <input type="text" placeholder="Title of the Game" class="sellGameTitle" />
+          <input
+            type="text"
+            placeholder="Title of the Game"
+            class="sellGameTitle"
+          />
           <input type="text" placeholder="Price" class="price" />
           <div class="gameDescription">
             <p>Please enter a descrition of the game here:</p>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your text"></textarea>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your text"
+            ></textarea>
           </div>
-          <label for="#" class="upload">Upload Photos Here:<input type="file" /></label>
-          <button onclick="if(!alert('Your Game has been listed')){window.location.reload();}">Sell</button>
+          <label for="#" class="upload"
+            >Upload Photos Here:<input type="file"
+          /></label>
+          <button
+            onclick="if(!alert('Your Game has been listed')){window.location.reload();}"
+          >
+            Sell
+          </button>
         </div>
       </div>
       <div class="UserHistory">
@@ -170,7 +238,6 @@
         </table>
       </div>
     </div>
-
   </body>
   <footer>
     <p>Copyright &copy; by Johansen & Co</p>

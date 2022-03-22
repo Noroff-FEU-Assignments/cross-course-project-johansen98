@@ -3,9 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Create an account to be able to login to GameHub" />
+    <meta
+      name="description"
+      content="Create an account to be able to login to GameHub"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2887954, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
     <script src="/js/script.js"></script>
     <title>Signup</title>
   </head>
@@ -13,7 +31,11 @@
   <body>
     <div class="overlay" id="overlay"></div>
     <section class="desktopNavbar">
-      <div class="menuIcon" style="grid-area: menuIcon; cursor: pointer" onclick="openMenu()">
+      <div
+        class="menuIcon"
+        style="grid-area: menuIcon; cursor: pointer"
+        onclick="openMenu()"
+      >
         <div></div>
         <div></div>
         <div></div>
@@ -24,27 +46,41 @@
         onclick="window.location.href ='../index.html'"
       />
       <div class="search">
-        <img src="/resources/icons/SearchIcon_grey.svg" onclick="window.location.href='/html/search.html'" />
+        <img
+          src="/resources/icons/SearchIcon_grey.svg"
+          onclick="window.location.href='/html/search.html'"
+        />
         <input placeholder="Search" type="text" name="search" />
       </div>
       <div class="links">
         <div class="seperator"></div>
         <div>
-          <a href="../index.html"><img src="/resources/icons/HomeIcon.svg" alt="" /></a>
+          <a href="../index.html"
+            ><img src="/resources/icons/HomeIcon.svg" alt=""
+          /></a>
           <div><a href="../index.html">Home</a></div>
         </div>
         <div class="seperator"></div>
         <div>
-          <a href="/html/games.html"><img href="../html/contact.html" src="/resources/icons/GameIcon.svg" alt="" /></a>
+          <a href="/html/games.html"
+            ><img
+              href="../html/contact.html"
+              src="/resources/icons/GameIcon.svg"
+              alt=""
+          /></a>
           <div><a href="/html/games.html">Games</a></div>
         </div>
         <div class="seperator"></div>
         <div>
-          <a href="/html/contact.html"><img src="/resources/icons/ContactIcon.svg" alt="" /></a>
+          <a href="/html/contact.html"
+            ><img src="/resources/icons/ContactIcon.svg" alt=""
+          /></a>
           <div><a href="/html/contact.html">Contact us</a></div>
         </div>
         <div class="seperator"></div>
-        <a href="/html/checkout.html"><img src="/resources/icons/ShoppingcartIcon.svg" alt="" /></a>
+        <a href="/html/checkout.html"
+          ><img src="/resources/icons/ShoppingcartIcon.svg" alt=""
+        /></a>
         <div></div>
       </div>
       <div class="buttons">
@@ -58,8 +94,12 @@
       <a href="/html/games.html">Games</a>
       <a href="/html/checkout.html">Contact Us</a>
       <div class="side-cta">
-        <button onclick="window.location.href = '/html/login.html'">Login</button>
-        <button onclick="window.location.href = '/html/signup.html'">Sign up</button>
+        <button onclick="window.location.href = '/html/login.html'">
+          Login
+        </button>
+        <button onclick="window.location.href = '/html/signup.html'">
+          Sign up
+        </button>
       </div>
     </div>
     <section class="mobileNavbar">
@@ -68,10 +108,20 @@
         <div></div>
         <div></div>
       </div>
-      <img width="70px;" src="/resources/icons/GameHub_Logo.svg" onclick="window.location.href ='../index.html'" />
+      <img
+        width="70px;"
+        src="/resources/icons/GameHub_Logo.svg"
+        onclick="window.location.href ='../index.html'"
+      />
       <img src="/resources/icons/SearchIcon.svg" onclick="search()" />
     </section>
-    <input class="searchbar" placeholder="Search" type="text" name="search" id="searchbar" />
+    <input
+      class="searchbar"
+      placeholder="Search"
+      type="text"
+      name="search"
+      id="searchbar"
+    />
     <div id="myMobileSideMenu" class="MobilesideMenu">
       <a href="#" class="closebtn" onclick="closeMobileMenu()">&times;</a>
       <a href="../index.html">Home</a>
@@ -79,8 +129,18 @@
       <a href="/html/checkout.html">Contact Us</a>
       <a href="/html/checkout.html">Shopping Cart</a>
       <div class="menu-CTA">
-        <button onclick="window.location.href = '/html/login.html'" style="cursor: pointer">Login</button>
-        <button onclick="window.location.href = '/html/signup.html'" style="cursor: pointer">Sign up</button>
+        <button
+          onclick="window.location.href = '/html/login.html'"
+          style="cursor: pointer"
+        >
+          Login
+        </button>
+        <button
+          onclick="window.location.href = '/html/signup.html'"
+          style="cursor: pointer"
+        >
+          Sign up
+        </button>
       </div>
     </div>
     <div class="mainSignupContainer">
@@ -90,7 +150,11 @@
         <input type="text" class="sirName" placeholder="Sir Name" />
         <input type="text" class="email" placeholder="E-mail" />
         <input type="password" class="password" placeholder="Password" />
-        <input type="password" class="password" placeholder="Confirm Password" />
+        <input
+          type="password"
+          class="password"
+          placeholder="Confirm Password"
+        />
         <input type="text" class="adresse" placeholder="Adress" />
         <input type="date" class="dateOfBirth" placeholder="Date Of Birth" />
         <input type="number" class="cardNumber" placeholder="Card Number" />
@@ -99,7 +163,9 @@
           <input type="number" class="cvc" placeholder="CVC" />
         </div>
         <div class="signupPageButtons">
-          <button onclick="window.location.href = '/html/account.html'">Sign up!</button>
+          <button onclick="window.location.href = '/html/account.html'">
+            Sign up!
+          </button>
         </div>
       </div>
     </div>
