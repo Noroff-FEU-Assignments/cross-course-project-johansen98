@@ -22,6 +22,8 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
     <script src="/js/script.js"></script>
+    <script src="/js/cartCtrl.js" defer></script>
+
     <title>checkout</title>
   </head>
 
@@ -145,12 +147,15 @@
       <h1>checkout</h1>
       <div class="checkoutContainer">
         <h2>Summary</h2>
-        <div class="sumOfItems">
-          <h3>1x Space War = 495,- NOK</h3>
-          <h3>+ 1x Boxer = 150,-NOK</h3>
-          <h3>+ Tax =32,25,-NOK</h3>
-          <h3>Total Sum = 677,25,-NOK</h3>
+        <div class="sumOfItems" id="display">
+          <div class="cartItem">
+            <h3>Title</h3>
+            <h3>Amount</h3>
+            <h3>Price</h3>
+            <h3>Sum</h3>
+          </div>
         </div>
+
         <div class="creditInfo">
           <input
             type="text"

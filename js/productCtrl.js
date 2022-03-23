@@ -133,6 +133,8 @@ function addToCart(){
     //If the compiler reach here, it means the product does not exists, push new shoppingCart object
     shoppingCart.push({
       productId: product.productId,
+      title: product.title,
+      price: product.price,
       amount: 1
     });
     localStorage.setItem("cart", JSON.stringify(shoppingCart));
@@ -141,6 +143,8 @@ function addToCart(){
     shoppingCart = [
       {
         productId: product.productId,
+        title: product.title,
+        price: product.price,
         amount: 1
       }
     ];

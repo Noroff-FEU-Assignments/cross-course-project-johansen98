@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/styles/style.css" />
     <script src="/js/script.js"></script>
     <title>Contact Us</title>
+    <script defer src="/js/validate.js"></script>
   </head>
 
   <body>
@@ -145,26 +146,33 @@
     </div>
     <div class="mainContactContainer">
       <div class="contactContainer">
-        <div class="contactInfo">
+        <form action="/" class="contactInfo" id="form" method="post">
           <h1>Contact Us Here!</h1>
-          <input type="text" class="name" placeholder="Your Name" />
-          <input type="text" name="epost" placeholder="Your E-mail" />
+          <div id="msg"></div>
+          <input
+            type="text"
+            id="name"
+            class="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="text"
+            id="email"
+            name="epost"
+            placeholder="Your E-mail"
+          />
           <h3>What can we help you with?</h3>
           <textarea
             name=""
-            id=""
+            id="message"
             cols="30"
             rows="10"
             placeholder="Your Message Here"
             style="resize: none"
           ></textarea>
-          <button
-            onclick="if(!alert('Thanks For Contacting Us!')){window.location.reload();}"
-            style="cursor: pointer"
-          >
-            Submit
-          </button>
-        </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
       </div>
     </div>
   </body>

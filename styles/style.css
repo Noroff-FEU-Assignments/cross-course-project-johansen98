@@ -149,7 +149,7 @@ body {
 }
 
 .buttons > button {
-  background-color: #d03af2;
+  background-color: #832997;
   border: none;
   border-radius: 4px;
   width: fit-content;
@@ -203,11 +203,11 @@ h1 {
   text-align: center;
   font-family: Oswald-Bold;
 }
-h2{
+h2 {
   font-family: Oswald-Bold;
 }
-h3{
-  font-family: Roboto-light
+h3 {
+  font-family: Roboto-light;
 }
 a {
   font-family: Roboto-light;
@@ -337,7 +337,7 @@ a {
   margin-top: 1vh;
   border: none;
   color: white;
-  background-color: #d03af2;
+  background-color: #832997;
 }
 /*signup page ↓↓↓*/
 .mainSignupContainer {
@@ -387,7 +387,7 @@ a {
   margin-top: 1vh;
   border: none;
   color: white;
-  background-color: #d03af2;
+  background-color: #832997;
 }
 
 /* contact us page ↓↓↓*/
@@ -427,7 +427,7 @@ a {
   height: 5vh;
   border: none;
   color: white;
-  background-color: #d03af2;
+  background-color: #832997;
   border-radius: 8px;
 }
 /*Product page ↓↓↓*/
@@ -445,7 +445,7 @@ a {
   justify-content: flex-start;
   flex-direction: column;
 }
-.productContainer > p{
+.productContainer > p {
   font-family: Roboto-Bold;
 }
 .prodImg {
@@ -454,7 +454,7 @@ a {
   width: 45vw;
   height: 45vh;
 }
-.productContainer > h2{
+.productContainer > h2 {
   font-family: Roboto-Bold;
 }
 .smalImg {
@@ -476,7 +476,7 @@ a {
 }
 .prodButtons > button {
   font-family: Roboto-Bold;
-  background-color: #d03af2;
+  background-color: #832997;
   color: white;
   border-radius: 8px;
   border: none;
@@ -514,7 +514,6 @@ a {
   height: 280px;
 }
 .userBio {
-  
   margin-top: 12vh;
   text-align: center;
 }
@@ -554,7 +553,7 @@ a {
   width: 20vw;
   resize: none;
 }
-.gameDescription p{
+.gameDescription p {
   font-family: Roboto-Bold;
 }
 .sellGameInfo .upload {
@@ -566,7 +565,7 @@ a {
   height: 5vh;
   border-radius: 8px;
   border: none;
-  background-color: #d03af2;
+  background-color: #832997;
   color: white;
 }
 .userPaymentHistory > table,
@@ -580,7 +579,7 @@ th {
   height: 3vh;
   width: 8vw;
 }
-.userPaymentHistory > caption{
+.userPaymentHistory > caption {
   font-family: Roboto-Bold;
 }
 
@@ -624,7 +623,7 @@ th {
 }
 .searchResult1Bt > button {
   font-family: Roboto-Bold;
-  background-color: #d03af2;
+  background-color: #832997;
   color: white;
   border: none;
   border-radius: 4px;
@@ -656,9 +655,35 @@ th {
 .checkoutContainer {
   background-color: #d8d8d8;
   width: 40vw;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.sumOfItems {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  gap: 5px;
+}
+.cartItemBtn {
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  cursor: pointer;
+}
+.cartItem {
+  display: grid;
+  grid-template-columns: 45% 10% 15% 15% 5% 5%;
+  align-items: center;
+}
+.remove {
+  width: 40px;
+  height: 30px;
 }
 .creditInfo {
   gap: 1vw;
@@ -668,7 +693,7 @@ th {
 }
 .creditInfo > button {
   font-family: Roboto-Bold;
-  background-color: #d03af2;
+  background-color: #832997;
   color: white;
   border-radius: 4px;
   border: none;
@@ -707,10 +732,6 @@ footer {
   margin-top: 50px;
   flex-basis: 100%;
 }
-
-
-
-
 
 @media only screen and (max-width: 770px) {
   body {
@@ -774,7 +795,7 @@ footer {
 
   .menu-CTA > button {
     text-align: center;
-    background-color: #d03af2;
+    background-color: #832997;
     color: white;
     width: 130px;
     height: 47px;
@@ -1117,8 +1138,10 @@ footer {
     height: 60vh;
   }
   .sumOfItems {
+    display: grid;
     margin-bottom: 2vh;
   }
+
   .creditInfo > button {
     height: 4vh;
     width: 22vw;
