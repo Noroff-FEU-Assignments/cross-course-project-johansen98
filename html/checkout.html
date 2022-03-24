@@ -23,6 +23,7 @@
     </script>
     <script src="/js/script.js"></script>
     <script src="/js/cartCtrl.js" defer></script>
+    <script defer src="/js/validate.js"></script>
 
     <title>checkout</title>
   </head>
@@ -154,21 +155,36 @@
             <h3>Price</h3>
             <h3>Sum</h3>
           </div>
+          <div class="total"></div>
         </div>
+        <button
+          id="deleteAllBtn"
+          class="deleteAllBtn"
+          onclick="deliteAll(); location.reload()"
+        >
+          Remove All
+        </button>
 
-        <div class="creditInfo">
+        <div id="checkOutForm" class="creditInfo" action="/">
+          <div id="error"></div>
           <input
             type="text"
             placeholder="Cardholders Name"
             class="cardHolder"
+            id="cardHoldersName"
           />
-          <input type="number" placeholder="Card number" class="cardNumber" />
+          <input
+            id="cardNumber"
+            type="number"
+            placeholder="Card number"
+            class="cardNumber"
+          />
           <div class="creditCVC">
-            <input type="number" placeholder="DD/MM" />
-            <input type="number" placeholder="CVC" />
+            <input id="date" type="number" placeholder="DD/MM" />
+            <input id="cvc" type="number" placeholder="CVC" />
           </div>
           <button
-            onclick="if(!alert('Your payment has been completed, Welcome back!')){window.location.href = '../index.html';}"
+            onclick=" alert('thanks for your purches'); location.reload(); deliteAll()"
             style="cursor: pointer"
           >
             Checkout
