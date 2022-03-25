@@ -54,7 +54,7 @@ for(i = 0; i < results.length; i++){
   
   }
 
-  if(results < 0){
+  if(results.length < 0){
     deleteAllBtn.style.display = "none";
   }else{
     deleteAllBtn.style.display = "block";

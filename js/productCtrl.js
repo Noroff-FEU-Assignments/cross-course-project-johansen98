@@ -150,4 +150,5 @@ function addToCart(){
     ];
     localStorage.setItem("cart", JSON.stringify(shoppingCart));
   }
+
 }
