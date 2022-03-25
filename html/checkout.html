@@ -158,15 +158,17 @@
             <h3>Price</h3>
             <h3>Sum</h3>
           </div>
-          <div class="total"></div>
         </div>
-        <button
-          id="deleteAllBtn"
-          class="deleteAllBtn"
-          onclick="deliteAll(); location.reload()"
-        >
-          Remove All
-        </button>
+        <div style="display: flex">
+          <div id="total"></div>
+          <button
+            id="deleteAllBtn"
+            class="deleteAllBtn"
+            onclick="deliteAll(); location.reload()"
+          >
+            Remove All
+          </button>
+        </div>
 
         <div id="checkOutForm" class="creditInfo" action="/">
           <div id="error"></div>
