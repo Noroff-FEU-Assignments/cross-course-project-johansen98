@@ -1,12 +1,20 @@
-const results = JSON.parse(localStorage.getItem("cart"))
+
 let totalOrderSum = 0;
-
-const removeItem = () =>{
-
+function deliteAll(){
+  localStorage.clear('cart');         
 }
+
 const generateShoppingcart = () =>{
   
-  for(i = 0; i < results.length; i++){
+  const cartItemElm = document.querySelectorAll('.cartItem')
+  for(i=1; i < cartItemElm.length; i++){
+    cartItemElm[i].parentNode.removeChild(cartItemElm[i])
+  }
+  const results = JSON.parse(localStorage.getItem("cart"))
+
+  
+  totalOrderSum = 0
+  for(i = 0; i < results?.length; i++){
     const result = results[i];
     const cartContainer = document.getElementById("display")
     const orderLineElm = document.createElement("div")
@@ -16,7 +24,6 @@ const generateShoppingcart = () =>{
     const sumOrderLinElm = document.createElement("h3");
     const removeLine = document.createElement("button")
     const addLine = document.createElement("button")
-    const deleteAllBtn = document.getElementById("deleteAllBtn")
   
     removeLine.innerHTML = "-"
     addLine.innerHTML = "+"
@@ -40,6 +47,18 @@ const generateShoppingcart = () =>{
     orderLineElm.appendChild(addLine)
   
     removeLine.id=i
+    addLine.id=i
+
+    addLine.addEventListener('click', (e) => {
+      const updatedResults = JSON.parse(localStorage.getItem("cart"))
+      const result = updatedResults[e.srcElement.id];
+
+      result.amount ++;
+
+      localStorage.setItem('cart', JSON.stringify(updatedResults))
+      generateShoppingcart()
+    })
+    totalOrderSum = totalOrderSum + result.price * result.amount
   
     removeLine.addEventListener('click',(e) => {
       const updatedResults = JSON.parse(localStorage.getItem("cart"))
@@ -51,27 +70,37 @@ const generateShoppingcart = () =>{
     result.amount --
   }
       localStorage.setItem('cart', JSON.stringify(updatedResults))
+      generateShoppingcart()
     })
-  
-    function deliteAll(){
-      localStorage.clear('cart');         
-      
-    }
-    
-    if(results.length < 0){
-      deleteAllBtn.style.display = "none";
-    }else{
-      deleteAllBtn.style.display = "block";
-    }
-  
-    totalOrderSum += result.price * result.amount
-    
   }
+  const displaySumElm =  document.getElementById('total')
+
+  if(!results || results.length === 0){
+    displaySumElm.style.display = "none"
+    deleteAllBtn.style.display = "none";
+  }else{
+    deleteAllBtn.style.display = "block";
+    displaySumElm.style.display = "block"
+  }
+  
+  updateSum()
 }
+
+const updateSum = () =>{
+  const  displaySumElm =  document.getElementById('displaySum')
+  if(displaySumElm){
+
+    displaySumElm.parentNode.removeChild(displaySumElm)
+  }
   const totalDiv = document.getElementById('total')
   const totalOrderSumElm = document.createElement("h3");
 
+  totalOrderSumElm.id='displaySum'
+
   totalOrderSumElm.innerHTML = "Sum: " + totalOrderSum
   totalDiv.appendChild(totalOrderSumElm)
+}
+generateShoppingcart()
+
 
 
