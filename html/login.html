@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Login to you GameHub account here!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2887954, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/js/script.js"></script>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <section class="desktopNavbar">
+      <div
+        class="menuIcon"
+        style="grid-area: menuIcon; cursor: pointer"
+        onclick="openMenu()"
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <img
+        src="/resources/icons/GameHub_Logo.svg"
+        style="grid-area: logo; margin: 0 auto; cursor: pointer"
+        onclick="window.location.href ='../index.html'"
+        alt="Gamehub logo"
+      />
+      <div class="search">
+        <img
+          src="/resources/icons/SearchIcon_grey.svg"
+          onclick="window.location.href='/html/search.html'"
+          alt="search icon"
+        />
+        <input placeholder="Search" type="text" name="search" />
+      </div>
+      <div class="links">
+        <div class="seperator"></div>
+        <div>
+          <a href="../index.html"
+            ><img src="/resources/icons/HomeIcon.svg" alt="home icon"
+          /></a>
+          <div><a href="../index.html">Home</a></div>
+        </div>
+        <div class="seperator"></div>
+        <div>
+          <a href="/html/games.html"
+            ><img
+              href="../html/contact.html"
+              src="/resources/icons/GameIcon.svg"
+              alt="game page icon"
+          /></a>
+          <div><a href="/html/games.html">Games</a></div>
+        </div>
+        <div class="seperator"></div>
+        <div>
+          <a href="/html/contact.html"
+            ><img src="/resources/icons/ContactIcon.svg" alt="contact us icon"
+          /></a>
+          <div><a href="/html/contact.html">Contact us</a></div>
+        </div>
+        <div class="seperator"></div>
+        <a href="/html/checkout.html"
+          ><img
+            src="/resources/icons/ShoppingcartIcon.svg"
+            alt="schopping cart icon"
+        /></a>
+        <div></div>
+      </div>
+      <div class="buttons">
+        <button
+          onclick="window.location.href = '/html/login.html'"
+          style="cursor: pointer"
+        >
+          Login
+        </button>
+        <button
+          onclick="window.location.href = '/html/signup.html'"
+          style="cursor: pointer"
+        >
+          Sign up
+        </button>
+      </div>
+    </section>
+    <div id="mySideMenu" class="sideMenu">
+      <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="/html/games.html">Games</a>
+      <a href="/html/contact.html">Contact Us</a>
+      <div class="side-cta">
+        <button onclick="window.location.href = '/html/login.html'">
+          Login
+        </button>
+        <button onclick="window.location.href = '/html/signup.html'">
+          Sign up
+        </button>
+      </div>
+    </div>
+    <section class="mobileNavbar">
+      <div class="menuIcon" style="cursor: pointer" onclick="openMobileMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <img
+        width="70px;"
+        src="/resources/icons/GameHub_Logo.svg"
+        onclick="window.location.href ='../index.html'"
+      />
+      <img src="/resources/icons/SearchIcon.svg" onclick="search()" />
+    </section>
+    <input
+      class="searchbar"
+      placeholder="Search"
+      type="text"
+      name="search"
+      id="searchbar"
+    />
+    <div id="myMobileSideMenu" class="MobilesideMenu">
+      <a href="#" class="closebtn" onclick="closeMobileMenu()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="/html/games.html">Games</a>
+      <a href="/html/contact.html">Contact Us</a>
+      <a href="/html/checkout.html">Shopping Cart</a>
+      <div class="menu-CTA">
+        <button onclick="window.location.href = '/html/login.html'">
+          Login
+        </button>
+        <button onclick="window.location.href = '/html/signup.html'">
+          Sign up
+        </button>
+      </div>
+    </div>
+    <div class="mainLoginContainer">
+      <div class="loginContainer">
+        <h1>Login Here:</h1>
+        <input type="text" class="email" placeholder="E-mail" />
+        <input type="password" class="password" placeholder="Password" />
+        <div class="loginPageButtons">
+          <button onclick="window.location.href = '/html/account.html'">
+            Login to GameHub
+          </button>
+          <button onclick="window.location.href = '/html/signup.html'">
+            Sign up here
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>Copyright &copy; by Johansen & Co</p>
+  </footer>
+</html>

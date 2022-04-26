@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.543" height="26.045" viewBox="0 0 29.543 26.045">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_105" data-name="Path 105" class="cls-1" d="M16.05-609.2H45.593V-635.24H16.05Z" transform="translate(764.95 1186.697)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_25" data-name="Mask Group 25" class="cls-2" transform="translate(-781 -551.457)">
+    <g id="fi-rr-home" transform="translate(781 551.465)">
+      <path id="Path_104" data-name="Path 104" class="cls-1" d="M28.461,9.918,19.124,1.686a6.765,6.765,0,0,0-8.705,0L1.082,9.918A3.051,3.051,0,0,0,0,12.22V22.873a3.5,3.5,0,0,0,3.693,3.256H25.85a3.5,3.5,0,0,0,3.693-3.256V12.22a3.051,3.051,0,0,0-1.082-2.3Zm-10,14.04H11.079V19.69a3.5,3.5,0,0,1,3.693-3.256,3.5,3.5,0,0,1,3.693,3.256Zm8.617-1.085a1.165,1.165,0,0,1-1.231,1.085H20.926V19.69c0-3-2.756-5.426-6.155-5.426S8.617,16.693,8.617,19.69v4.269H3.693a1.165,1.165,0,0,1-1.231-1.085V12.22a1.033,1.033,0,0,1,.361-.767l9.337-8.229a4.064,4.064,0,0,1,5.224,0l9.337,8.232a1.033,1.033,0,0,1,.361.764Z" transform="translate(0 -0.1)"/>
+    </g>
+  </g>
+</svg>

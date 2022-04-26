@@ -1,0 +1,1171 @@
+@font-face {
+  font-family: Oswald-Bold;
+  src: url(/resources/fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+  font-family: Oswald-Medium;
+  src: url(/resources/fonts/Oswald-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto-light;
+  src: url(/resources/fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(/resources/fonts/Roboto-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.desktopNavbar {
+  width: 100vw;
+  height: 80px;
+  background-image: linear-gradient(180deg, rgb(34, 93, 255), rgb(4, 0, 255));
+  padding: 5px 0;
+  display: grid;
+  grid-template-areas:
+    "menuIcon logo   .      .  .   . buttons buttons"
+    "menuIcon logo search nav  nav nav nav  nav";
+  align-items: center;
+}
+
+.MobilesideMenu {
+  display: none;
+}
+
+.searchbar {
+  display: none;
+}
+
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-cta {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.side-cta > button {
+  text-align: center;
+  background-color: #d03af2;
+  color: white;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+}
+
+.overlay {
+  display: none;
+  width: 100vw;
+  height: 121vh;
+  background-color: black;
+  z-index: 100;
+  opacity: 50%;
+  position: absolute;
+}
+
+.sideMenu a {
+  padding-bottom: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: flex;
+  opacity: 100%;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.sideMenu a:hover {
+  color: #979797;
+}
+
+.sideMenu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.search {
+  grid-area: search;
+  position: relative;
+  padding: 0 20px 0 0;
+  background: #ddd;
+  direction: ltr;
+  width: 90%;
+}
+
+.search input {
+  height: 20px;
+  margin: 0;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.search img {
+  position: absolute;
+  bottom: 2px;
+  right: -8px;
+  width: 18px !important;
+  height: 24px;
+}
+
+.desktopNavbar img {
+  width: 100px;
+}
+
+.buttons {
+  grid-area: buttons;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 25px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttons > button {
+  background-color: #832997;
+  border: none;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 5px 10px;
+  color: white;
+}
+
+.menuIcon {
+  margin: 0 auto;
+}
+
+.menuIcon > div {
+  border-radius: 15%;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px;
+}
+
+.links {
+  grid-area: nav;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  text-align: center;
+  height: 100%;
+  align-items: center;
+  color: white;
+}
+
+.links img {
+  width: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobileNavbar {
+  display: none;
+}
+
+.seperator {
+  height: 60%;
+  background-color: black;
+  width: 1px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Oswald-Bold;
+}
+h2 {
+  font-family: Oswald-Bold;
+}
+h3 {
+  font-family: Roboto-light;
+}
+a {
+  font-family: Roboto-light;
+}
+
+.mainContainer {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mobileMainContainer {
+  display: none;
+}
+
+.newGameContainer {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.newGameContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.headImg img {
+  width: 260px;
+}
+
+.rightMedium img {
+  width: 240px;
+}
+
+.rightSmal img {
+  width: 230px;
+}
+
+.leftMedium img {
+  width: 240px;
+}
+
+.leftSmal img {
+  width: 230px;
+}
+
+.saleContainer {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 2vw;
+  text-align: center;
+}
+.saleContainer h3 {
+  margin: 0;
+}
+
+.MobileSaleContainer {
+  display: none;
+}
+
+.saleContainer img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+/* all games page */
+
+.allGamesContainer {
+  display: grid;
+  width: 90vw;
+  height: 100vh;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4vw;
+  margin-bottom: 100vh;
+  text-align: center;
+}
+.allGamesContainer img {
+  width: 100%;
+  height: 90%;
+}
+/* login page ↓↓*/
+.mainLoginContainer {
+  margin-top: 10vh;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+.loginContainer {
+  background-image: url(/resources/images/gom1Fs.jpeg);
+  box-shadow: 10px 10px 5px grey;
+  width: 50vw;
+  height: 70vh;
+  display: grid;
+  color: white;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+  gap: 1.5vh;
+}
+
+.loginContainer > input {
+  font-family: Roboto-Bold;
+  width: 15vw;
+  height: 3vh;
+}
+.loginPageButtons {
+  display: grid;
+  gap: 0.5vw;
+}
+.loginPageButtons > button {
+  font-family: Roboto-Bold;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 8px;
+  margin-top: 1vh;
+  border: none;
+  color: white;
+  background-color: #832997;
+}
+/*signup page ↓↓↓*/
+.mainSignupContainer {
+  margin-top: 10vh;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+.signupContainer {
+  background-image: url(/resources/images/gom1Fs.jpeg);
+  box-shadow: 10px 10px 5px grey;
+  width: 50vw;
+  height: 80vh;
+  display: grid;
+  color: white;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+  gap: 1.5vh;
+}
+
+.signupContainer > input {
+  width: 15vw;
+  height: 3vh;
+  font-family: Roboto-Bold;
+}
+.cvc-container {
+  display: flex;
+  gap: 1vw;
+}
+.cvc-container > input {
+  font-family: Roboto-Bold;
+  height: 3vh;
+  width: 4vw;
+  text-align: center;
+}
+.signupPageButtons {
+  display: grid;
+  gap: 0.5vw;
+}
+.signupPageButtons > button {
+  font-family: Roboto-Bold;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 8px;
+  margin-top: 1vh;
+  border: none;
+  color: white;
+  background-color: #832997;
+}
+
+/* contact us page ↓↓↓*/
+.mainContactContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contactContainer {
+  display: grid;
+  align-items: start;
+  background-color: #d8d8d8;
+  width: 50vw;
+  height: 95vh;
+}
+.contactInfo {
+  display: grid;
+  justify-items: center;
+  padding-top: 10vh;
+  gap: 2vh;
+}
+.contactInfo > input {
+  font-family: Roboto-Bold;
+  width: 15vw;
+  height: 3vh;
+}
+.contactInfo > textarea {
+  font-family: Roboto-Bold;
+  width: 15vw;
+}
+.contactInfo > h3 {
+  margin: 0 auto;
+}
+.contactInfo > button {
+  font-family: Roboto-Bold;
+  width: 10vw;
+  height: 5vh;
+  border: none;
+  color: white;
+  background-color: #832997;
+  border-radius: 8px;
+}
+/*Product page ↓↓↓*/
+
+.mainProductConainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+.productContainer {
+  display: flex;
+  width: 60vw;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.productContainer > p {
+  font-family: Roboto-Bold;
+}
+.prodImg {
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  width: 45vw;
+  height: 45vh;
+}
+.productContainer > h2 {
+  font-family: Roboto-Bold;
+}
+.smalImg {
+  width: 3vw;
+}
+.prodInnerContainer {
+  display: flex;
+  width: 45vw;
+  justify-content: space-between;
+  gap: 3vw;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.prodButtons {
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+}
+.prodButtons > button {
+  font-family: Roboto-Bold;
+  background-color: #832997;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  height: 5vh;
+  width: 8vw;
+}
+#prodPrice {
+  font-weight: bold;
+}
+/*Account page ↓↓↓*/
+.mainProfileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8vh;
+  width: 100vw;
+  height: 170vh;
+}
+.profileHeader {
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 8px 8px 5px grey;
+  width: 65vw;
+  height: 65vh;
+  gap: 2vw;
+  background-color: #d5d5d5;
+  justify-content: center;
+}
+.userImg {
+  margin-top: 4vh;
+}
+.userImg > img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+.userBio {
+  margin-top: 12vh;
+  text-align: center;
+}
+.userInfo {
+  font-family: Roboto-Bold;
+  margin-top: 4vh;
+}
+.sellGameContainer {
+  margin-top: 2vh;
+  text-align: center;
+  width: 40vw;
+  height: 80vh;
+}
+.sellGameContainer > h2 {
+  margin-bottom: 5vh;
+}
+.sellGameInfo {
+  text-align: center;
+  display: grid;
+  gap: 3vh;
+  justify-items: center;
+}
+.sellGameInfo .sellGameTitle {
+  font-family: Roboto-Bold;
+  width: 15vw;
+  height: 5vh;
+  text-align: center;
+}
+.sellGameInfo .price {
+  font-family: Roboto-Bold;
+  width: 5vw;
+  height: 5vh;
+  text-align: center;
+}
+.gameDescription > textarea {
+  font-family: Roboto-Bold;
+  width: 20vw;
+  resize: none;
+}
+.gameDescription p {
+  font-family: Roboto-Bold;
+}
+.sellGameInfo .upload {
+  margin-left: 7vw;
+}
+.sellGameInfo > button {
+  font-family: Roboto-Bold;
+  width: 8vw;
+  height: 5vh;
+  border-radius: 8px;
+  border: none;
+  background-color: #832997;
+  color: white;
+}
+.userPaymentHistory > table,
+th,
+td {
+  font-family: Roboto-Bold;
+  border: 1px solid black;
+}
+.userPaymentHistory > table,
+th {
+  height: 3vh;
+  width: 8vw;
+}
+.userPaymentHistory > caption {
+  font-family: Roboto-Bold;
+}
+
+.UserHistory {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  height: 100vh;
+  width: 50vw;
+}
+/*Search page↓↓↓*/
+.searchInfo {
+  text-align: center;
+}
+.mainSearch {
+  width: 100vw;
+  height: 220vh;
+  display: flex;
+  justify-content: center;
+}
+.searchPage {
+  width: 50vw;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12vh;
+}
+.searchResult1 {
+  display: flex;
+  gap: 1vw;
+}
+.searchResult1 > img {
+  width: 350px;
+}
+.searchResult1Bt {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  justify-content: flex-end;
+}
+.searchResult1Bt > button {
+  font-family: Roboto-Bold;
+  background-color: #832997;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 5vw;
+  height: 3vh;
+}
+.searchResult2 {
+  display: flex;
+  gap: 1vw;
+}
+.searchResult2 > img {
+  width: 350px;
+}
+.searchResult3 {
+  display: flex;
+  gap: 1vw;
+}
+.searchResult3 > img {
+  width: 350px;
+}
+/*Checkout pgae ↓↓↓*/
+.mainCheckoutConatiner {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.checkoutContainer {
+  background-color: #d8d8d8;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.sumOfItems {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  gap: 5px;
+}
+.cartItemBtn {
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  cursor: pointer;
+}
+.cartItem {
+  display: grid;
+  grid-template-columns: 35% 10% 15% 15% 10% 5% 5%;
+  align-items: center;
+}
+.remove {
+  width: 40px;
+  height: 30px;
+}
+.deleteAllBtn {
+  width: 80px;
+  height: 40px;
+}
+.creditInfo {
+  gap: 1vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.creditInfo > button {
+  font-family: Roboto-Bold;
+  background-color: #832997;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  height: 4vh;
+  width: 8vw;
+}
+.cardHolder {
+  font-family: Roboto-Bold;
+  width: 12vw;
+  height: 3vh;
+}
+.cardNumber {
+  font-family: Roboto-Bold;
+  width: 12vw;
+  height: 3vh;
+}
+.creditCVC {
+  width: 13vw;
+  display: flex;
+  justify-content: space-around;
+}
+.creditCVC > input {
+  font-family: Roboto-Bold;
+  height: 3vh;
+  width: 5.5vw;
+}
+
+footer {
+  font-family: Roboto-Bold;
+  width: 100vw;
+  height: 80px;
+  background-image: linear-gradient(180deg, rgb(34, 93, 255), rgb(4, 0, 255));
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  margin-top: 50px;
+  flex-basis: 100%;
+}
+
+@media only screen and (max-width: 770px) {
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .desktopNavbar {
+    display: none;
+  }
+
+  .mobileNavbar {
+    display: flex;
+    width: 95vw;
+    height: 7.5vh;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+  }
+
+  .mobileNavbar img {
+    padding-right: 10px;
+  }
+
+  .menuIcon {
+    margin: 0;
+  }
+
+  .searchbar {
+    display: none;
+    width: 100vw;
+    position: absolute;
+    top: 7.5vh;
+    height: 5vh;
+    border: 0.1px solid gray;
+  }
+
+  .MobilesideMenu {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    opacity: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .menu-CTA {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu-CTA > button {
+    text-align: center;
+    background-color: #832997;
+    color: white;
+    width: 130px;
+    height: 47px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+
+  .menu-CTA > button:focus {
+    text-align: center;
+    background-color: #a43dfc;
+    color: white;
+    width: 130px;
+    height: 47px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .MobilesideMenu a {
+    /*padding: 8px 8px 8px 32px;*/
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    opacity: 100%;
+    transition: 0.3s;
+    margin: 10px auto;
+  }
+
+  .MobilesideMenu a:hover {
+    color: #979797;
+  }
+
+  .MobilesideMenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .mainContainer {
+    display: none;
+  }
+
+  .mobileMainContainer {
+    display: block;
+    height: 100%;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    font-family: Oswald-Medium;
+  }
+
+  .MobileNewGameContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MobileHeadImg {
+    width: 40%;
+  }
+
+  .MobileMedium {
+    width: 35%;
+  }
+
+  .MobileSaleContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .MobileSaleContainer > h1 {
+    margin-top: 100px;
+    font-size: 35px;
+  }
+
+  .MobileSaleContainer img {
+    width: 40%;
+    padding: 0px;
+  }
+  /*games page ↓↓↓*/
+  .allGamesContainer {
+    display: grid;
+    height: 100%;
+    margin-top: 10vh;
+    grid-template-columns: 1fr;
+    gap: 4vw;
+    justify-items: center;
+    margin-bottom: 0;
+  }
+  .allGamesContainer img {
+    width: 80vw;
+    height: 80%;
+  }
+  /* login page ↓↓*/
+  .mainLoginContainer {
+    margin-top: 10vh;
+    width: 100vw;
+    height: 100vh;
+  }
+  .loginContainer {
+    width: 85vw;
+    height: 50vh;
+    gap: 1.5vh;
+  }
+
+  .loginContainer > input {
+    width: 40vw;
+    height: 3vh;
+  }
+
+  .loginPageButtons {
+    display: grid;
+    margin-top: 2vh;
+    gap: 1vw;
+  }
+
+  .loginPageButtons > button {
+    width: 35vw;
+    height: 5vh;
+  }
+
+  /*signup page ↓↓↓*/
+
+  .mainSignupContainer {
+    width: 95vw;
+    height: 90vh;
+    margin-left: 2.5vw;
+  }
+  .signupContainer {
+    width: 80vw;
+    height: 80vh;
+    gap: 1.5vh;
+  }
+
+  .signupContainer > input {
+    width: 35vw;
+    height: 3vh;
+  }
+
+  .cvc-container > input {
+    width: 15vw;
+    text-align: center;
+  }
+
+  .signupPageButtons > button {
+    width: 20vw;
+    height: 5vh;
+    border-radius: 8px;
+    margin-top: 1vh;
+  }
+
+  /*contact page ↓↓↓*/
+
+  .contactContainer {
+    width: 80vw;
+    height: 95vh;
+  }
+
+  .contactInfo > input {
+    width: 35vw;
+    height: 3vh;
+  }
+
+  .contactInfo > textarea {
+    width: 35vw;
+  }
+
+  .contactInfo > h3 {
+    margin-top: 5vh;
+  }
+
+  .contactInfo > button {
+    width: 30vw;
+  }
+  .productContainer {
+    width: 80vw;
+  }
+  .prodImg {
+    width: 80vw;
+    height: 30vh;
+    background-size: 90vw;
+    background-position: center;
+  }
+  .prodInnerContainer {
+    width: 80vw;
+  }
+  .prodButtons > button {
+    width: 20vw;
+  }
+  .smalImg {
+    display: flex;
+    justify-items: flex-start;
+    margin-top: 0vw;
+    width: 15vw;
+  }
+
+  /*Account page ↓↓↓*/
+  .mainProfileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    width: 100%;
+    height: 260vh;
+  }
+  .profileHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 8px 8px 5px grey;
+    width: 85vw;
+    height: 50vh;
+    gap: 0;
+    background-color: #d5d5d5;
+  }
+
+  .userImg > img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+  }
+  .userBio {
+    margin-top: 0;
+    text-align: center;
+  }
+  .userInfo {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .sellGameContainer {
+    margin-top: 2vh;
+    text-align: center;
+    width: 85vw;
+    height: 80vh;
+  }
+  .sellGameContainer > h2 {
+    margin-bottom: 5vh;
+  }
+  .sellGameInfo {
+    text-align: center;
+    display: grid;
+    gap: 2vh;
+    justify-items: center;
+  }
+  .sellGameInfo .sellGameTitle {
+    width: 55vw;
+    height: 5vh;
+    text-align: center;
+  }
+  .sellGameInfo .price {
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+  }
+  .gameDescription > textarea {
+    width: 65vw;
+    resize: none;
+  }
+  .sellGameInfo .upload {
+    margin-left: 10vw;
+    display: none;
+  }
+
+  .sellGameInfo > button {
+    width: 25vw;
+    height: 5vh;
+  }
+  .userPaymentHistory > table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  .UserHistory {
+    width: 85vw;
+  }
+  .userPaymentHistory > table,
+  th {
+    height: 3vh;
+    width: 250vw;
+  }
+  /*Search page↓↓↓*/
+  .mainSearch {
+    width: 100vw;
+    height: 170vh;
+  }
+  .searchPage {
+    width: 95vw;
+    height: 170vh;
+    gap: 12vh;
+  }
+  .searchResult1 {
+    gap: 2vw;
+  }
+  .searchResult1 > img {
+    width: 200px;
+  }
+
+  .searchResult1Bt > button {
+    width: 20vw;
+    height: 5vh;
+  }
+  .searchResult2 {
+    gap: 2vw;
+  }
+  .searchResult2 > img {
+    width: 200px;
+  }
+  .searchResult3 {
+    gap: 2vw;
+  }
+  .searchResult3 > img {
+    width: 200px;
+  }
+  /*Checkout pgae ↓↓↓*/
+  .mainCheckoutConatiner {
+    height: 100vh;
+  }
+  .checkoutContainer {
+    width: 95vw;
+    height: 60vh;
+  }
+  .sumOfItems {
+    display: grid;
+    margin-bottom: 2vh;
+  }
+
+  .creditInfo > button {
+    height: 4vh;
+    width: 22vw;
+  }
+  .cardHolder {
+    width: 45vw;
+    height: 3vh;
+  }
+  .cardNumber {
+    width: 45vw;
+    height: 3vh;
+  }
+  .creditCVC {
+    width: 45vw;
+    gap: 1vw;
+    margin-bottom: 2vh;
+  }
+  .creditCVC > input {
+    height: 3vh;
+    width: 21vw;
+  }
+}
