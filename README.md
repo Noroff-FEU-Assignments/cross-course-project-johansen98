@@ -1,29 +1,28 @@
-# Semester Project 1
+# Cross Course Project
 
-![semester Tile jp](https://user-images.githubusercontent.com/61602808/172398933-a57197d5-01cc-4a9c-8072-58ad3433cab8.jpg)
+![Cross-Cors-Tile jpg](https://user-images.githubusercontent.com/61602808/172824562-ee621512-69a8-41ab-9284-6b15b300aad6.jpg)
 
-This site is a museum web site, the target audiance is the younger generation.
+This site is a place where you can buy and sell games
 
 ## Description
+this is the first site i ever made, so now i think the design could be alot different. here i have used a lot of colors to match the Game aspect of the website.
+The website uses WP REST API to fech all imgs and info about the different games. 
+this is a very simple website but it has a few cool js fuctions like a fully working Shopping cart and the APi handling 
 
-This website is buildt as a template for a museum, the site is bulit with accessibility and functionality in mind. its has a simple color palet but it makes
-the site look modern and it has a hig contrast.
-i have used a big font size for this project only for accessibility but after a while that made the site look more modern and simple, i have had great feedback on the project, i would love to hear what you make of it :D
-
-the JavaScript on this site is only used for opening menues and adding animations etc. there could be a case where i could add API to the site to fech images and informatin so the site becomes more dynamic but for now its only a template.
 
 the keay features of the site
 
-- Modern
 - Easy to Navigate
 - accessibility friendly
 - functional
+- dynamic
 
 ## Built With
 
 - [JavaScript](https://www.javascript.com/)
 - [HTML](https://whatwg.org/)
 - [CSS](https://www.w3.org/)
+- [WordPress](https://wordpress.com/)
 
 ## Getting Started
 
