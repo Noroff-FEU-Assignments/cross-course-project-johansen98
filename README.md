@@ -7,7 +7,9 @@ This site is a place where you can buy and sell games
 ## Description
 this is the first site i ever made, so now i think the design could be alot different. here i have used a lot of colors to match the Game aspect of the website.
 The website uses WP REST API to fech all imgs and info about the different games. 
-this is a very simple website but it has a few cool js fuctions like a fully working Shopping cart and the APi handling 
+this is a very simple website but it has a few cool js fuctions like a fully working Shopping cart and the APi handling.
+
+the profile side of the site isnt fully working its static and hard coded just as an example of how it could look when its done, when all the little things is worked out and finished the site is a okey starting point. for me i can clearly see my coding progress from this to my last project
 
 
 the keay features of the site
